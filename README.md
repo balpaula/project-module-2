@@ -54,8 +54,9 @@ GET /home
 
 GET /fridge
 POST /fridge - POST Body: ingredient ID
-GET /fridge/ingredients
-POST /fridge/ingredients - POST Body: ingredient ID
+GET /fridge/ingredients/(add)?
+POST /fridge/ingredients/(add)? - POST Body: ingredient ID
+POST /fridge/ingredients/(:id)/(delete)?
 
 GET /recipes
 GET /recipes/suggestions
