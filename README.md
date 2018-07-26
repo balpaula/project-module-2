@@ -76,7 +76,8 @@ User:
 Ingredient:
  - name: String,
  - type: String,
- - quantity: num
+ - quantity: num,
+ -image: String
  
 Recipe:
   - title: String,
