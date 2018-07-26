@@ -90,10 +90,12 @@ Recipe:
 
 ## Links
 
-https://trello.com/b/Pr77pryi/project-module-2
-
 ### Trello
 
+https://trello.com/b/Pr77pryi/project-module-2
+
 ### Git
+
+https://github.com/marcposito/project-module-2/edit/master/README.md
 
 ### Slides.com
