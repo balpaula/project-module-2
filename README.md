@@ -96,6 +96,6 @@ https://trello.com/b/Pr77pryi/project-module-2
 
 ### Git
 
-https://github.com/marcposito/project-module-2/edit/master/README.md
+https://github.com/marcposito/project-module-2
 
 ### Slides.com
