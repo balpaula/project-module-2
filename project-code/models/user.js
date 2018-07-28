@@ -6,7 +6,7 @@ const userSchema = new Schema({
     username: String,
     email: String,
     password: String,
-    diet: { type: String, enum: ['vegetarian', 'vegan', 'standard']},
+    diet: { type: String, enum: ['vegetarian', 'vegan', 'standard'] },
     fridge: Array
 
 }, {

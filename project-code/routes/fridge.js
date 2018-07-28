@@ -15,12 +15,12 @@ router.get('/ingredients/add', function(req, res, next) {
   res.send('add');
 });
 
-router.post('/ingredients/add', function(req, res, next) {
+// router.post('/ingredients/add', function(req, res, next) {
   
-});
+// });
 
-router.post('/ingredients/:id/delete', function(req, res, next) {
+// router.post('/ingredients/:id/delete', function(req, res, next) {
   
-});
+// });
 
 module.exports = router;
