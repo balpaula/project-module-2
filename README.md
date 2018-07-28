@@ -40,6 +40,10 @@ Ingredients:
 
 ## Views (frameworks) (sketches)
 
+![alt text](https://github.com/marcposito/project-module-2/blob/dev/sketches/IMG_20180728_124941.jpg)
+![alt text](https://github.com/marcposito/project-module-2/blob/dev/sketches/IMG_20180728_124957.jpg)
+![alt text](https://github.com/marcposito/project-module-2/blob/dev/sketches/IMG_20180728_125009.jpg)
+
 ## Routes
 
 ```
