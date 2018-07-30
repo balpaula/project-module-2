@@ -1,1 +1,9 @@
 {{> navlogout }}
+
+
+{{#each recipes}}
+    <div>
+        <h3><a href="/recipes/{{this.id}}">{{this.title}}</a></h3>
+        <p>Ingredients: {{#each this.ingredients}}{{this}} {{/each}}</p>
+    </div>
+{{/each}}
