@@ -7,6 +7,9 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const authMiddleWare = require('./middlewares/auth');
+const hbs = require('hbs');
+const flash = require('connect-flash');
+
 
 mongoose.connect('mongodb://localhost/fridgeat');
 
@@ -20,6 +23,9 @@ const recipesRouter = require('./routes/recipes');
 const app = express();
 
 // view engine setup
+
+hbs.registerPartials(__dirname + '/views/partials');
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
@@ -28,6 +34,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(flash());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -44,10 +51,11 @@ app.use(function(req, res, next) {
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
-  res.locals.message = err.message;
+  res.locals.message = err.status === 404 ? 'Page not found' : 'Internal server error';
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
   // render the error page
+
   res.status(err.status || 500);
   res.render('error');
 });
