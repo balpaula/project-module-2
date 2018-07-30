@@ -21,8 +21,17 @@ router.get('/all', function(req, res, next) {
     });
 });
 
-router.get('/:id', function(req, res, next) {
-  res.render('recipedetail');
+router.get('/:id', (req, res, next) => {
+  const { id } = req.params;
+  Recipe.findById(id)
+    .then(recipe => {
+      res.render('recipedetail', recipe);
+    })
+    .catch(error => {
+      next(error);
+    });
 });
+
+router.post('/:id')
 
 module.exports = router;

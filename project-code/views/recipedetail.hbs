@@ -1,1 +1,14 @@
 {{> navlogout }}
+
+<div>
+    <img src="{{this.image}}" alt="">
+    <h1>{{this.title}}</h1>
+    <h3>Level: {{this.level}}</h3>
+    <h3>Time: {{this.time}}</h3>
+    <h4>Ingredients: {{#each this.ingredients}}{{this}} {{/each}}</h4>
+    <ol>
+        {{#each this.description}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ol>
+</div>
