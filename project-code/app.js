@@ -56,11 +56,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(flash());
 
 app.use('/', indexRouter);
-app.use('/auth', authRouter);
-app.use('/users', usersRouter);
-app.use('/fridge', fridgeRouter);
-app.use('/home', homeRouter);
-app.use('/recipes', recipesRouter);
+app.use('/auth', authMiddleWare.requireAnom, authRouter);
+app.use('/users', authMiddleWare.requireUser, usersRouter);
+app.use('/fridge', authMiddleWare.requireUser, fridgeRouter);
+app.use('/home', authMiddleWare.requireUser, homeRouter);
+app.use('/recipes', authMiddleWare.requireUser, recipesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -20,33 +20,35 @@
     </div>
 </section>
 
-<section name="signup"></section>
-    <div>
-        <h2>Sign up</h2>
-        <form action="./auth/signup" method="post">
-            <div>
-                <label for="">Username</label>
-                <input type="text" name="username" />
-            </div>
-            <div>
-                <label for="">Email</label>
-                <input type="email" name="email" />
-            </div>
-            <div>
-                <label for="">Password</label>
-                <input type="password" name="password" />
-            </div>
-
-            <div>
-                <button type="submit">Sign up</button>
-            </div>
-        </form>
+{{#if currentUser}}{{else}}
+    <section name="signup"></section>
         <div>
-            <p>Already have an account? <a href="/auth/login">Log in</a></p>
+            <h2>Sign up</h2>
+            <form action="./auth/signup" method="post">
+                <div>
+                    <label for="">Username</label>
+                    <input type="text" name="username" />
+                </div>
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" name="email" />
+                </div>
+                <div>
+                    <label for="">Password</label>
+                    <input type="password" name="password" />
+                </div>
+
+                <div>
+                    <button type="submit">Sign up</button>
+                </div>
+            </form>
+            <div>
+                <p>Already have an account? <a href="/auth/login">Log in</a></p>
+            </div>
+            {{message}}
         </div>
-        {{message}}
-    </div>
-</section>
+    </section>
+{{/if}}
 
 
 {{> footer}}

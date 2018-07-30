@@ -66,9 +66,4 @@ router.post('/login', (req, res, next) => {
     });
 });
 
-router.post('/logout', function(req, res, next) {
-  delete req.session.currentUser;
-  res.redirect('/');
-});
-
 module.exports = router;
