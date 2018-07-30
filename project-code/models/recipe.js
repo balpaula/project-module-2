@@ -8,7 +8,8 @@ const recipeSchema = new Schema({
     time: Number,
     ingredients: Array,
     description: Array,
-    image: String
+    image: String,
+    source: String
 }, {
     timestamps: {
         createdAt: "created_at",
