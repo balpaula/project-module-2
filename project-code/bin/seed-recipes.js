@@ -86,6 +86,15 @@ const recipes = [
         image: String,
         source: 'bbcgoodfood.com'
     },
+    {
+        title: 'Chicken and egg fried rice',
+        level: [1],
+        time: 30,
+        ingredients: ['rice', 'chicken', 'onion', 'garlic', 'egg'],
+        description: ['Cook the rice according to the pack instructions until al dente (10-15 minutes). Drain, rinse to cool, then tip onto kitchen paper and pat dry. Meanwhile, cut the skin and bone from the chicken (and discard), then slice the meat. Slice the onions, crush the garlic and lightly beat the eggs.', 'Heat the oil in a wok or big frying pan, then stir-fry the chicken over a high heat for 3-4 minutes until just browned. Add the onions and garlic, then reduce the heat to low-medium. Cook, stirring, for 5-6 minutes, then add the eggs. Leave for a few seconds to set a little, then stir with a spatula to break up the egg.', 'Add the rice and stir-fry over a high heat for 5 minutes or until the rice is piping hot, the chicken is cooked and everything is lightly browned. Stir in the soy sauce, vinegar and fish sauce, then check the seasoning. Divide among bowls and serve straightaway, topped with leaves picked from the coriander.'],
+        image: 'http://localhost:3000/images/rice-chicken.jpg',
+        source: 'deliciousmagazine.com'
+    },
 ]
 
 Recipe.create(recipes)
