@@ -26,7 +26,6 @@ const app = express();
 
 hbs.registerPartials(__dirname + '/views/partials');
 
-app.set('public', path.join(__dirname, 'public'));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
