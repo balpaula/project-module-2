@@ -40,15 +40,35 @@ router.post('/signup', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-  res.send('login');
+  res.render('login', { message: req.flash('alert') });
 });
 
-// router.post('/login', function(req, res, next) {
-  
-// });
+router.post('/login', (req, res, next) => {
+  const { username, password } = req.body;
+  if (!username || !password) {
+      req.flash('alert', 'Missing username or password');
+      res.redirect('/auth/login');
+      return;
+  }
+  User.findOne({ username })
+    .then(user => {
+      if (!user) {
+        req.flash('alert', 'Incorrect username or password');
+        res.redirect('/auth/login');
+      } 
+      if (bcrypt.compareSync(password /* provided paswword */, user.password/* hashed password */)) {
+        // Save the login in the session!
+        req.session.currentUser = user;
+        res.redirect('/home');
+      } else {
+        res.redirect('/auth/login');
+      }
+    });
+});
 
-// router.post('/logout', function(req, res, next) {
-  
-// });
+router.post('/logout', function(req, res, next) {
+  delete req.session.currentUser;
+  res.redirect('/');
+});
 
 module.exports = router;

@@ -42,6 +42,11 @@ app.use(session({
   }
 }));
 
+app.use((req, res, next) => {
+  app.locals.currentUser = req.session.currentUser;
+  next();
+});
+
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -51,8 +56,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(flash());
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/auth', authRouter);
+app.use('/users', usersRouter);
 app.use('/fridge', fridgeRouter);
 app.use('/home', homeRouter);
 app.use('/recipes', recipesRouter);
