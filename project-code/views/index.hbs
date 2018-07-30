@@ -1,2 +1,56 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+{{> navindex}}
+
+<section>
+    <h1>Fridgeat</h1>
+    <h2>Subtitle</h2>
+</section>
+
+<section>
+    <div>
+        <img src="" alt="">
+        <p>Texto 1</p>
+    </div>
+    <div>
+        <img src="" alt="">
+        <p>Texto 2</p>
+    </div>
+    <div>
+        <img src="" alt="">
+        <p>Texto 3</p>
+    </div>
+</section>
+
+{{#if currentUser}}
+    <a href="/home">Access my fridge</a>
+{{else}}
+    <section name="signup"></section>
+        <div>
+            <h2>Sign up</h2>
+            <form action="./auth/signup" method="post">
+                <div>
+                    <label for="">Username</label>
+                    <input type="text" name="username" />
+                </div>
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" name="email" />
+                </div>
+                <div>
+                    <label for="">Password</label>
+                    <input type="password" name="password" />
+                </div>
+
+                <div>
+                    <button type="submit">Sign up</button>
+                </div>
+            </form>
+            <div>
+                <p>Already have an account? <a href="/auth/login">Log in</a></p>
+            </div>
+            {{message}}
+        </div>
+    </section>
+{{/if}}
+
+
+{{> footer}}

@@ -40,6 +40,10 @@ Ingredients:
 
 ## Views (frameworks) (sketches)
 
+![alt text](https://github.com/marcposito/project-module-2/blob/dev/sketches/IMG_20180728_124941.jpg)
+![alt text](https://github.com/marcposito/project-module-2/blob/dev/sketches/IMG_20180728_124957.jpg)
+![alt text](https://github.com/marcposito/project-module-2/blob/dev/sketches/IMG_20180728_125009.jpg)
+
 ## Routes
 
 ```
@@ -53,8 +57,10 @@ POST /auth/logout - POST Body: nothing
 GET /home
 
 GET /fridge
-GET /fridge/ingredients
-POST /fridge/ingredients - POST Body: ingredient ID
+POST /fridge - POST Body: ingredient ID
+GET /fridge/ingredients/(add)?
+POST /fridge/ingredients/(add)? - POST Body: ingredient ID
+POST /fridge/ingredients/(:id)/(delete)?
 
 GET /recipes
 GET /recipes/suggestions
@@ -91,6 +97,10 @@ Recipe:
 
 ### Trello
 
+https://trello.com/b/Pr77pryi/project-module-2
+
 ### Git
+
+https://github.com/marcposito/project-module-2
 
 ### Slides.com
