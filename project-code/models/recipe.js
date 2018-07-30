@@ -7,7 +7,7 @@ const recipeSchema = new Schema({
     level: Number,
     time: Number,
     ingredients: Array,
-    description: String,
+    description: Array,
     image: String
 }, {
     timestamps: {

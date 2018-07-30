@@ -3,19 +3,19 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('recipes');
+  res.render('recipes');
 });
 
 router.get('/suggestions', function(req, res, next) {
-  res.send('suggestions');
+  res.render('listrecipes');
 });
 
 router.get('/all', function(req, res, next) {
-  res.send('all');
+  res.render('listrecipes');
 });
 
 router.get('/:id', function(req, res, next) {
-  res.send('detail');
+  res.render('recipedetail');
 });
 
 module.exports = router;
