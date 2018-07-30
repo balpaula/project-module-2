@@ -20,10 +20,10 @@
     </div>
 </section>
 
-<section id="signup">
+<section name="signup">
     <div>
         <h2>Sign up</h2>
-        <form action="/auth/signup" method="post">
+        <form action="./auth/signup" method="post">
             <div>
                 <label for="">Username</label>
                 <input type="text" name="username"/>
@@ -41,6 +41,7 @@
                 <button type="submit">Sign up</button>
             </dir>
         </form>
+        {{message}}
     </div>
 </section>
 
