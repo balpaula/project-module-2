@@ -53,7 +53,6 @@ POST /auth/logout - POST Body: nothing
 GET /home
 
 GET /fridge
-POST /fridge - POST Body: ingredient ID
 GET /fridge/ingredients
 POST /fridge/ingredients - POST Body: ingredient ID
 
