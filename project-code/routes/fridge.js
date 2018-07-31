@@ -53,12 +53,15 @@ router.post('/ingredients/add', function(req, res, next) {
   User.findById(currentUser._id)
     .then((user) => {
       let ingredientsID = user.fridge.map(element => {
-        return element._id;
+        let id  = element._id.toString();
+        return id;
       })
 
-      ingredients.forEach(ingredient => {
+      console.log(ingredientsID);
 
-        if (!ingredientsID.includes(ingredient._id)) {
+      ingredients.forEach(ingredient => {
+        let id = ingredient._id.toString();
+        if (!ingredientsID.includes(id)) {
           user.fridge.push(ingredient);
         }
       })
