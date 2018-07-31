@@ -5,8 +5,13 @@ const Ingredient = require('../models/ingredient');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-
-  res.render('fridge');
+  const currentUser = req.session.currentUser;
+  User.findById(currentUser._id)
+    .then(user => {
+      let ingredients = user.fridge;
+      res.render('fridge', { ingredients });
+    })
+    .catch(next);
 });
 
 router.get('/ingredients', function(req, res, next) {
@@ -26,12 +31,34 @@ router.get('/ingredients/add', function(req, res, next) {
 
 router.post('/ingredients/add', function(req, res, next) {
   const newIngredients = req.body.ingredient;
+  let ingredients = [];
+
+  if (typeof newIngredients === "string"){
+    Ingredient.findOne({name: newIngredients})
+      .then(obj => {
+        ingredients.push(obj);
+      })
+      .catch(next);
+  } else {
+    newIngredients.forEach(ingredient => {
+      Ingredient.findOne({name: ingredient})
+        .then(obj => {
+          ingredients.push(obj);
+        })
+        .catch(next);
+    })
+  }
+
   const currentUser = req.session.currentUser;
-  console.log(currentUser, currentUser._id, currentUser.fridge)
   User.findById(currentUser._id)
     .then((user) => {
-      newIngredients.forEach(ingredient => {
-        if (!user.fridge.includes(ingredient)) {
+      let ingredientsID = user.fridge.map(element => {
+        return element._id;
+      })
+
+      ingredients.forEach(ingredient => {
+
+        if (!ingredientsID.includes(ingredient._id)) {
           user.fridge.push(ingredient);
         }
       })
@@ -39,7 +66,6 @@ router.post('/ingredients/add', function(req, res, next) {
       return user.save();
     })
     .then((user) => {
-      console.log(user);
       res.redirect('/fridge');
     })
     .catch(next);
