@@ -86,7 +86,7 @@ body {
 
 .signup-signin-button {
   font-size: 10em;
-  height: 7vh;
+  height: 8vh;
   color: white;
   background-color: #3b3b3b;
   width: 50%;
@@ -155,4 +155,15 @@ body {
 .remove-style-acc {
   text-decoration: none;
   color: #3b3b3b;
+}
+
+.footer {
+  background-color: #3b3b3b;
+  height: 10vh;
+}
+
+.footer-text {
+  padding-top: 5%;
+  font-size: 5em;
+  color: white;
 }
