@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const Ingredient = require('../models/ingredient');
 
 const Schema = mongoose.Schema;
 
@@ -7,7 +8,7 @@ const userSchema = new Schema({
     email: String,
     password: String,
     diet: { type: String, enum: ['vegetarian', 'vegan', 'standard'] },
-    fridge: Array,
+    fridge: [Ingredient.schema],
 }, {
     timestamps: {
         createdAt: "created_at",

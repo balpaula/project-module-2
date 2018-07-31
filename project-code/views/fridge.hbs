@@ -3,7 +3,14 @@
 <div>
     <h2>My fridge</h2>
     <div>
-        <div>Each iterator with icons</div>
+        <div>
+            {{#each ingredients}} 
+                <div>
+                    <img src="{{this.image}}" alt="">
+                    <p>{{this.name}}</p>
+                </div>
+            {{/each}}
+        </div>
         <div><h5>Vegetables</h5></div>
     </div>
     <div>
