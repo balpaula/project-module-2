@@ -30,12 +30,11 @@ router.post('/ingredients/add', function(req, res, next) {
   console.log(currentUser, currentUser._id, currentUser.fridge)
   User.findById(currentUser._id)
     .then((user) => {
-      newIngredients.forEach(ingredient => {
+       newIngredients.forEach(ingredient => {
         if (!user.fridge.includes(ingredient)) {
           user.fridge.push(ingredient);
         }
       })
-
       return user.save();
     })
     .then((user) => {
