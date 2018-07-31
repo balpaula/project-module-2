@@ -1,50 +1,53 @@
 <section class="title">
     {{> navindex}}
     <h1 class="title-image">Fridgeat</h1>
-    <h2>Subtitle</h2>
+    <h2 class="subtitle">Eat what is it in your fridge</h2>
 </section>
 
-<section>
+<section class="logo-text">
     <div>
-        <img src="" alt="">
-        <p>Texto 1</p>
+        <img src="http://icons-for-free.com/free-icons/png/512/355958.png" alt="" class="img-text">
+        <h3 class="section2-titles">Titulo 1</h3>
+        <p class="section2-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit praesentium minima exercitationem adipisci nesciunt explicabo officiis aut, repellendus eius recusandae. Rem, corporis aut minima illo vel soluta quod accusantium!</p>
     </div>
     <div>
-        <img src="" alt="">
-        <p>Texto 2</p>
+        <img src="https://cdn0.iconfinder.com/data/icons/kitchen-and-cooking/512/cooking_pot_boiling_preparation_flat_design_icon-512.png" alt="" class="img-text">
+        <h3 class="section2-titles">Titulo 2</h3>
+        <p class="section2-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit praesentium minima exercitationem adipisci nesciunt explicabo officiis aut, repellendus eius recusandae. Rem, corporis aut minima illo vel soluta quod accusantium!</p>
     </div>
     <div>
-        <img src="" alt="">
-        <p>Texto 3</p>
+        <img src="https://cdn.iconscout.com/public/images/icon/premium/png-512/cooking-meal-preparation-pot-lunch-on-fire-3b3c49a09a4404e2-512x512.png" alt="" class="img-text">
+        <h3 class="section2-titles">Titulo 3</h3>
+        <p class="section2-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit praesentium minima exercitationem adipisci nesciunt explicabo officiis aut, repellendus eius recusandae. Rem, corporis aut minima illo vel soluta quod accusantium</p>
     </div>
 </section>
 
 {{#if currentUser}}
     <a href="/home">Access my fridge</a>
 {{else}}
-    <section name="signup"></section>
-        <div>
-            <h2>Sign up</h2>
-            <form action="./auth/signup" method="post">
+    <section name="signup" class="signup-form">
+        <div class="form-div">
+            <h2 class="form-title">Sign up</h2>
+            <form action="./auth/signup" method="post" class="general-form">
                 <div>
-                    <label for="">Username</label>
-                    <input type="text" name="username" />
+                    <label for="" class="form-text">Username</label>
+                    <input type="text" name="username" class="form-input"/>
                 </div>
                 <div>
-                    <label for="">Email</label>
-                    <input type="email" name="email" />
+                    <label for="" class="form-text">Email</label>
+                    <input type="email" name="email" class="form-input"/>
                 </div>
                 <div>
-                    <label for="">Password</label>
-                    <input type="password" name="password" />
+                    <label for="" class="form-text">Password</label>
+                    <input type="password" name="password" class="form-input"/>
                 </div>
 
-                <div>
-                    <button type="submit">Sign up</button>
+                <div class="input-button-space">
+                    <button type="submit" class="signup-signin-button">Sign up</button>
                 </div>
             </form>
-            <div>
-                <p>Already have an account? <a href="/auth/login">Log in</a></p>
+            <div class="another-acc">
+                <p class="form-acc-text">Already have an account? <a href="/auth/login" class="remove-style-acc">Log in</a></p>
             </div>
             {{message}}
         </div>

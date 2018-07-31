@@ -12,19 +12,30 @@ body {
 }
 
 .title {
-  background-image: url('../images/backgroundImages/index-bg-img.jpg');
+  background-image: url('../images/backgroundImages/appetizer-board-color-326268.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 35vh;
+  height: 83vh;
+}
+
+.subtitle {
+  font-size: 10em;
+  color: white;
+  padding-left: 5%;
+  padding-top: 15%; 
 }
 
 .nav-index {
   background-color: rgba(255, 255, 255,0.4);
-  
+  height: 9vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.nav-index ul {
+  padding-top: 5%;
 }
 
 .auth {
@@ -40,12 +51,108 @@ body {
 
 .auth li {
   padding-right: 4vw;
-  font-size: 1.2rem;
+  font-size: 5em;
 }
 
 .title-image {
-  font-size: 7rem;
+  font-size: 20em;
   color: white;
-  padding-left: 15%;
-  
+  padding-left: 7%;
+  line-height: 70px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.logo-text,div {
+  width: 100%;
+}
+
+.signup-form {
+  background-image: url('../images/backgroundImages/cherry-food-fresh-890507.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  text-align: center;
+}
+
+.signup-signin-button {
+  font-size: 10em;
+  height: 7vh;
+  color: white;
+  background-color: #3b3b3b;
+  width: 50%;
+  padding-bottom: 1%;
+}
+
+.form-div {
+  background-color: rgba(255, 255, 255,0.4);
+  width: 100%;
+  display: inline-block;
+}
+
+.general-form {
+  text-align: center;
+}
+
+.img-text {
+  height: 20vh;
+}
+
+.section2-text {
+  font-size: 4em;
+  color: #3b3b3b;
+}
+
+.section2-titles {
+  font-size: 7em;
+}
+
+.form-title {
+  font-size: 15em;
+  color: #3b3b3b;
+}
+
+.form-text {
+  font-size: 8em;
+  color: #3b3b3b;
+}
+
+.form-input {
+  width: 50%;
+  height: 2vh;
+}
+
+.align-form-cemter {
+  text-align: center;
+}
+
+.align-form-left {
+  text-align: left;
+}
+
+.input-button-space {
+  margin-top: 20%;
+}
+
+.another-acc {
+  margin-top:10%;
+}
+
+.form-acc-text {
+  font-size: 6em;
+  color: #3b3b3b;
+}
+
+.remove-style-acc {
+  text-decoration: none;
+  color: #3b3b3b;
 }
