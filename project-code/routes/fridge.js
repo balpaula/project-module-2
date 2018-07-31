@@ -27,14 +27,22 @@ router.get('/ingredients/add', function(req, res, next) {
 router.post('/ingredients/add', function(req, res, next) {
   const newIngredients = req.body.ingredient;
   const currentUser = req.session.currentUser;
-  newIngredients.forEach(ingredient => {
-    User.update({ _id: currentUser.user_id }, { $push: { fridge: ingredient}})
-      .then(user => {
-        res.redirect('/fridge')})
-      .catch(error => {
-        next(error);
-      });
-  });
+  console.log(currentUser, currentUser._id, currentUser.fridge)
+  User.findById(currentUser._id)
+    .then((user) => {
+      newIngredients.forEach(ingredient => {
+        if (!user.fridge.includes(ingredient)) {
+          user.fridge.push(ingredient);
+        }
+      })
+
+      return user.save();
+    })
+    .then((user) => {
+      console.log(user);
+      res.redirect('/fridge');
+    })
+    .catch(next);
 });
 
 // router.post('/ingredients/:id/delete', function(req, res, next) {
