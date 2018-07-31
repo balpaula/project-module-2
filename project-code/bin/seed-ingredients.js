@@ -8,12 +8,12 @@ const ingredients = [
     {
         name: 'pepper',
         type: 'vegetable',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Pepper.svg'
     },
     {
         name: 'lettuce',
         type: 'vegetable',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Lettuce.svg'
     },
     {
         name: 'bread',
@@ -23,22 +23,22 @@ const ingredients = [
     {
         name: 'cheese',
         type: 'dairy',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Cheese.svg'
     },
     {
         name: 'chicken',
         type: 'meat',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Chicken.svg'
     },
     {
         name: 'watermelon',
         type: 'fruit',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Watermelon.svg'
     },
     {
         name: 'lemon',
         type: 'fruit',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Lemon.svg'
     },
     {
         name: 'cookies',
@@ -48,32 +48,27 @@ const ingredients = [
     {
         name: 'steak',
         type: 'meat',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Steak.svg'
     },
     {
         name: 'milk',
         type: 'dairy',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Milk.svg'
     },
     {
         name: 'egg',
         type: 'eggs',
-        image: 'asd'
-    },
-    {
-        name: 'bread',
-        type: 'cereals',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Egg.svg'
     },
     {
         name: 'jam',
         type: 'sweets',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Jam.svg'
     },
     {
         name: 'chocolate',
         type: 'sweets',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Chocolate.svg'
     },
     {
         name: 'sardine',
@@ -81,24 +76,24 @@ const ingredients = [
         image: 'asd'
     },
     {
-        name: 'salami',
+        name: 'salame',
         type: 'meat',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Salame.svg'
     },
     {
         name: 'eggplant',
         type: 'vegetable',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Eggplant.svg'
     },
     {
         name: 'carrot',
         type: 'vegetable',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Carrot.svg'
     },
     {
-        name: 'grape',
+        name: 'grapes',
         type: 'fruit',
-        image: 'asd'
+        image: 'http://localhost:3000/images/icon/Grapes.svg'
     },
     {
         name: 'rice',

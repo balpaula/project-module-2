@@ -1,1 +1,11 @@
 {{> navlogout }}
+
+<form action="/ingredients/add" method="post"></form>
+    {{#each ingredients}}
+        <div>
+            <img src="{{this.image}}" alt=""><br>
+            <input type="checkbox" name="ingredient" value="{{this.name}}">{{this.name}}<br>
+        </div>
+    {{/each}}
+    <input type="submit" value="Add">
+</form>

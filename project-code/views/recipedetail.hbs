@@ -3,8 +3,12 @@
 <div>
     <img src="{{this.image}}" alt="">
     <h1>{{this.title}}</h1>
-    <h3>Difficulty: {{#each this.level}}<img src="http://localhost:3000/images/spoon-16.png" alt="">{{/each}}</h3>
-    <h3>Time: {{this.time}} min</h3>
+    <div>
+        <h3>Difficulty: {{#each this.level}}<img src="http://localhost:3000/images/spoon-16.png" alt="">{{/each}}</h3>
+    </div>
+    <div>
+        <h3>Time: {{this.time}} min</h3>
+    </div>
     <h4>Ingredients: {{#each this.ingredients}}{{this}} {{/each}}</h4>
     <ol>
         {{#each this.description}}

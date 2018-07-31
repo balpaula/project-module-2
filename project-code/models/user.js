@@ -7,8 +7,7 @@ const userSchema = new Schema({
     email: String,
     password: String,
     diet: { type: String, enum: ['vegetarian', 'vegan', 'standard'] },
-    fridge: Array
-
+    fridge: Array,
 }, {
     timestamps: {
         createdAt: "created_at",

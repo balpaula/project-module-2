@@ -32,6 +32,6 @@ router.get('/:id', (req, res, next) => {
     });
 });
 
-router.post('/:id')
+
 
 module.exports = router;
