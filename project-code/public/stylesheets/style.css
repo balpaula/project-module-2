@@ -34,6 +34,22 @@ body {
   justify-content: space-between;
 }
 
+.nav-only-logo {
+  background-color: #3b3b3b;
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-logout {
+  background-color: #3b3b3b;
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .nav-index ul {
   padding-top: 5%;
 }
@@ -80,6 +96,16 @@ body {
   background-repeat: no-repeat;
   width: 100vw;
   height: 80vh;
+  display: flex;
+  text-align: center;
+}
+
+.login-form {
+  background-image: url('../images/backgroundImages/bowl-coffee-cooking-880476.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   text-align: center;
 }
@@ -165,5 +191,109 @@ body {
 .footer-text {
   padding-top: 5%;
   font-size: 5em;
+  color: white;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-fridge {
+  width: 100%;
+  text-align: center;
+}
+
+.home-fridge {
+  font-size: 6em;
+}
+
+.home-recipes{
+  width: 100%;
+  text-align: center;
+}
+
+.home-recipes h3{
+ font-size: 6em;
+}
+
+.home-recipes-icon {
+  height: 25vh;
+}
+
+.home-fridge-icon {
+  height: 30vh;
+}
+
+.logout-button {
+  height: 5vh;
+  color: white;
+  font-size: 6em;
+}
+
+.recipes-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipes-div {
+  text-align: center;
+}
+
+.recipes-title{
+  text-decoration: none;
+  font-size: 8em;
+  color: #3b3b3b;
+}
+
+.all-recipes {
+  display: flex;
+  flex-direction: column
+}
+
+.list-recipes-div {
+  text-align: center;
+}
+
+.list-recipes-title {
+  font-size: 3em;
+  text-decoration: none;
+}
+
+.list-recipes-text {
+  font-size: 2em;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-title {
+  font-size: 5em;
+}
+
+.detail-h3 {
+ font-size: 3em;
+}
+
+.detail-h4 {
+font-size: 2em;
+}
+
+.detail-instructions {
+  font-size: 2em;
+}
+
+.detail-source {
+  font-size: 1.5em;
+}
+
+.detail-spoon {
+  height: 3vh;
+}
+
+.logout-text {
+  font-size: 3em;
   color: white;
 }
