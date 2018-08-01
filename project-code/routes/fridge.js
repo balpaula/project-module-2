@@ -48,7 +48,6 @@ router.get('/', function(req, res, next) {
     })
     .catch(next);
 });
-
 router.get('/ingredients', function(req, res, next) {
   res.send('ingredients');
   //redirect to ingredients/add
