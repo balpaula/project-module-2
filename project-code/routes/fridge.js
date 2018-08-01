@@ -39,6 +39,12 @@ router.post('/ingredients/add', (req, res, next) => {
   const newIngredients = req.body.ingredient;
   const { currentUser } = req.session;
 
+  //primero buscan los ingredientes
+  // dentro del then de la resolucion
+  //.then((data)) => {
+  // User.findByIdAndUpdate(cuenter, data)  
+  //}
+
   User.findById(currentUser._id)
   .then((user) => {
     return user.fridge
