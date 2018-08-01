@@ -46,7 +46,7 @@ router.post('/ingredients/add', (req, res, next) => {
     Ingredient.find( { "name": { "$in": newIngredients } } )
     .then((ingredients) => {
       // User.findById(currentUser._id, { "$push": { "fridge": { "$each": ingredients }}})
-      User.update( {"_id": currentUser._id },{ "$push": { "fridge": { "$each": ingredients }}})
+      User.update({"_id": currentUser._id },{ "$push": { "fridge": { "$each": ingredients }}})
     })
     .then(() =>{
       res.redirect('/fridge')
