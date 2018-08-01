@@ -98,7 +98,17 @@ router.post('/ingredients/add', (req, res, next) => {
     
   });
 
+router.post('/ingredients/delete', (req, res, next) => {
+  const ingredientsToDelete = req.body;
+  const { currentUser } = req.session;
 
+  User.findByIdAndUpdate(currentUser._id, {$pull: {fridge: {name: {$each: ingredientsToDelete}}}})
+  .then(user => {
+    console.log(user);
+    res.redirect('/fridge');
+  })
+  .catch(next);
+});
 
   // User.findById(currentUser._id)
   // .then((user) => {

@@ -332,3 +332,20 @@ font-size: 2em;
   font-size: 6em;
   font-weight: 400;
 }
+
+input[type=checkbox].css-checkbox{ display: none; }
+
+.css-label{
+  display: flex;
+  width: 4.4vw;
+  background-color: #E9EEF4;
+  background-size: contain;
+  margin: 2%;
+  border-radius: 10px;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+ background-position: 0 0;
+ outline: 3px solid #2FBCDF;
+ -moz-outline-radius: 10px;
+}
