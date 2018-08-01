@@ -5,7 +5,7 @@ const Ingredient = require('../models/ingredient');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  const currentUser = req.session.currentUser;
+  const { currentUser } = req.session;
   User.findById(currentUser._id)
     .then(user => {
       let ingredients = user.fridge;
