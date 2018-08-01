@@ -20,13 +20,20 @@ router.get('/ingredients', function(req, res, next) {
 });
 
 router.get('/ingredients/add', function(req, res, next) {
-  Ingredient.find()
+  const { currentUser } = req.session;
+  User.findById(currentUser._id)
+    .then(user => {
+      return user.fridge;
+    })
+    .then(fridge => {
+      console.log(fridge);
+      Ingredient.find({$nin: {fridge: fridge}})
+    })
     .then(ingredients => {
+      console.log(ingredients);
       res.render('ingredients', { ingredients });
     })
-    .catch(error => {
-      next(error);
-    });
+    .catch(next);
 });
 
 // router.post('/ingredients/add', function(req, res, next) {
