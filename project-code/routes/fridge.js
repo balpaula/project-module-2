@@ -29,11 +29,31 @@ router.get('/ingredients/add', function(req, res, next) {
       return Ingredient.find( { "_id": { "$nin": ingredientIds }})
     })
     .then(ingredients => {
-      console.log(ingredients);
       res.render('ingredients', { ingredients });
     })
     .catch(next);
 });
+
+router.post('/ingredients/add', (req, res, next) => {
+  const newIngredients = req.body.ingredient;
+  const { currentUser } = req.session;
+
+  User.findById(currentUser._id)
+  .then((user) => {
+    return user.fridge
+  })
+  .then((fridge) => {
+    Ingredient.find( { "name": { "$in": newIngredients } } )
+    .then((ingredients) => {
+      // User.findById(currentUser._id, { "$push": { "fridge": { "$each": ingredients }}})
+      User.update( {"_id": currentUser._id },{ "$push": { "fridge": { "$each": ingredients }}})
+    })
+    .then(() =>{
+      res.redirect('/fridge')
+    })
+    .catch(next);
+  })
+  })
 
 // router.post('/ingredients/add', function(req, res, next) {
 //   const newIngredients = req.body.ingredient;
