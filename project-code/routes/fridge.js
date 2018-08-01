@@ -8,7 +8,8 @@ router.get('/', function(req, res, next) {
   const { currentUser } = req.session;
   User.findById(currentUser._id)
     .then(user => {
-      let ingredients = user.fridge;
+      console.log(user.fridge)
+      let  ingredients  = user.fridge;
       res.render('fridge', { ingredients });
     })
     .catch(next);
@@ -45,8 +46,10 @@ router.post('/ingredients/add', (req, res, next) => {
   .then((fridge) => {
     Ingredient.find( { "name": { "$in": newIngredients } } )
     .then((ingredients) => {
+      currentUser.fridge.push(ingredients)
       // User.findById(currentUser._id, { "$push": { "fridge": { "$each": ingredients }}})
-      User.update({"_id": currentUser._id },{ "$push": { "fridge": { "$each": ingredients }}})
+      // User.update({"_id": currentUser._id },{ $push: { "fridge": { "$each": ingredients }}})
+      // User.update({"_id": currentUser._id },{ $pushAll: { "fridge":  ingredients }})
     })
     .then(() =>{
       res.redirect('/fridge')
