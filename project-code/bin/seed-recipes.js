@@ -9,7 +9,7 @@ const recipes = [
         title: 'Cheesy ham & broccoli pasta',
         level: [1],
         time: 30,
-        ingredients: ['pasta', 'broccoli', 'onion', 'garlic', 'ham', 'cheese'],
+        ingredients: ['cheese'],
         description: ['Bring a large pan of water to the boil and cook the pasta following pack instructions, adding the broccoli florets to the pan for the final 4 mins. Drain and set aside.', 'Meanwhile, make the sauce. Heat the oil in a large pan and cook the onion for 5 mins to soften, then stir in the garlic and cook for 1 min more. Stir in the ham and cream, then bring to the boil. Add the pasta and broccoli, then stir in the cheese, coating everything in the sauce.'],
         image: 'http://localhost:3000/images/broccoli-pasta.png',
         source: 'bbcgoodfood.com'

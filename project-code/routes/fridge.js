@@ -11,8 +11,39 @@ router.get('/', function(req, res, next) {
   User.findById(currentUser._id)
     .populate('fridge')
     .then(user => {
-      console.log(user.fridge)
-      let  ingredients  = user.fridge;
+      let ingredients = {
+        vegetables: [],
+        meatAndFish: [],
+        dairyAndEggs: [],
+        fruits: [],
+        cereals: [],
+        sweets: []
+      }
+      user.fridge.forEach(element => {
+        switch (element.type){
+          case 'vegetable':
+            ingredients.vegetables.push(element);
+            break;
+          case 'meat':
+          case 'fish':
+            ingredients.meatAndFish.push(element);
+            break;
+          case 'dairy':
+          case 'eggs':
+            ingredients.dairyAndEggs.push(element);
+            break;
+          case 'fruit':
+            ingredients.fruits.push(element);
+            break;
+          case 'cereals':
+            ingredients.cereals.push(element);
+            break;
+          case 'sweets':
+            ingredients.sweets.push(element);
+            break;
+        }
+      })
+
       res.render('fridge', { ingredients });
     })
     .catch(next);

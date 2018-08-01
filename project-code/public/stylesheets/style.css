@@ -101,26 +101,31 @@ body {
   width: 100%;
 }
 
-.signup-form {
-  background-image: url('../images/backgroundImages/cherry-food-fresh-890507.jpg');
+.info {
+  padding: 7%;
+}
+
+.info p {
+  text-align: justify;
+}
+
+.signup-form, .login-form {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 80vh;
+  height: 91vh;
   display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.signup-form {
+  background-image: url('../images/backgroundImages/cherry-food-fresh-890507.jpg');
+}
+
 .login-form {
   background-image: url('../images/backgroundImages/bowl-coffee-cooking-880476.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  text-align: center;
 }
 
 .signup-login-button {
@@ -321,4 +326,9 @@ font-size: 2em;
 .logout-text {
   font-size: 3em;
   color: white;
+}
+
+.fridge-classification-title {
+  font-size: 6em;
+  font-weight: 400;
 }

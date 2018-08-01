@@ -4,30 +4,69 @@
     <h2>My fridge</h2>
     <div>
         <div>
-            {{#each ingredients}} 
+            {{#each ingredients.vegetables}} 
                 <div>
                     <img src="{{this.image}}" alt="">
                     <p>{{this.name}}</p>
                 </div>
             {{/each}}
         </div>
-        <div><h5>Vegetables</h5></div>
+        <div><h5 class="fridge-classification-title">Vegetables</h5></div>
     </div>
     <div>
-        <div>Each iterator with icons</div>
-        <div><h5>Meat & Fish</h5></div>
+        <div>
+            {{#each ingredients.meatAndFish}} 
+                <div>
+                    <img src="{{this.image}}" alt="">
+                    <p>{{this.name}}</p>
+                </div>
+            {{/each}}
+        </div>
+        <div><h5 class="fridge-classification-title">Meat & Fish</h5></div>
     </div>
     <div>
-        <div>Each iterator with icons</div>
-        <div><h5>Dairy & Eggs</h5></div>
+        <div>
+            {{#each ingredients.dairyAndEggs}} 
+                <div>
+                    <img src="{{this.image}}" alt="">
+                    <p>{{this.name}}</p>
+                </div>
+            {{/each}}
+        </div>
+        <div><h5 class="fridge-classification-title">Dairy & Eggs</h5></div>
     </div>
     <div>
-        <div>Each iterator with icons</div>
-        <div><h5>Fruits</h5></div>
+        <div>
+            {{#each ingredients.fruits}} 
+                <div>
+                    <img src="{{this.image}}" alt="">
+                    <p>{{this.name}}</p>
+                </div>
+            {{/each}}
+        </div>
+        <div><h5 class="fridge-classification-title">Fruits</h5></div>
+    </div>
+     <div>
+        <div>
+            {{#each ingredients.cereals}} 
+                <div>
+                    <img src="{{this.image}}" alt="">
+                    <p>{{this.name}}</p>
+                </div>
+            {{/each}}
+        </div>
+        <div><h5 class="fridge-classification-title">Cereals</h5></div>
     </div>
     <div>
-        <div>Each iterator with icons</div>
-        <div><h5>Sweets</h5></div>
+        <div>
+            {{#each ingredients.sweets}} 
+                <div>
+                    <img src="{{this.image}}" alt="">
+                    <p>{{this.name}}</p>
+                </div>
+            {{/each}}
+        </div>
+        <div><h5 class="fridge-classification-title">Sweets</h5></div>
     </div>
     <h1><a href="/fridge/ingredients/add">+</a></h1>
 </div>
