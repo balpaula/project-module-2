@@ -1,83 +1,85 @@
 {{> navlogout }}
 
 <div>
-    <h2>My fridge</h2>
+    <div class="current-ingredients-title">
+        <h1 class="current-ingredients-h1">My fridge</h1>
+    </div>
     <form action="/fridge/ingredients/delete" method="POST">
         <div>
-            <div>
-                {{#each ingredients.vegetables}} 
-                    <div>
-                        <input id="{{this.name}}" type="checkbox" class="css-checkbox" name="ingredient" value="{{this.name}}">
-                        <label for="{{this.name}}" class="css-label"><img src="{{this.image}}" alt=""></label>
-                        <p>{{this.name}}</p>
-                    </div>
-                {{/each}}
-            </div>
             <div><h5 class="fridge-classification-title">Vegetables</h5></div>
+            <div class="current-ingredients-display-flex">
+                {{#each ingredients.vegetables}} 
+                    <div class="current-ingredients-display-flex">
+                        <input id="{{this.name}}" type="checkbox" class="css-checkbox" name="ingredient" value="{{this.name}}">
+                        <label for="{{this.name}}" class="css-label"><img   class="current-ingredients-image" src="{{this.image}}" alt=""></label>
+                        <p class="current-ingredient-name">{{this.name}}</p>
+                    </div>
+                {{/each}}
+            </div>
         </div>
         <div>
-            <div>
+        <div><h5 class="fridge-classification-title">Meat & Fish</h5></div>
+            <div class="current-ingredients-display-flex">
                 {{#each ingredients.meatAndFish}} 
-                    <div>
+                    <div class="current-ingredients-display-flex">
                         <input id="{{this.name}}" type="checkbox" class="css-checkbox" name="ingredient" value="{{this.name}}">
-                        <label for="{{this.name}}" class="css-label"><img src="{{this.image}}" alt=""></label>
-                        <p>{{this.name}}</p>
+                        <label for="{{this.name}}" class="css-label"><img class="current-ingredients-image" src="{{this.image}}" alt=""></label>
+                        <p class="current-ingredient-name">{{this.name}}</p>
                     </div>
                 {{/each}}
             </div>
-            <div><h5 class="fridge-classification-title">Meat & Fish</h5></div>
         </div>
         <div>
-            <div>
-                {{#each ingredients.dairyAndEggs}} 
-                    <div>
-                        <input id="{{this.name}}" type="checkbox" class="css-checkbox" name="ingredient" value="{{this.name}}">
-                        <label for="{{this.name}}" class="css-label"><img src="{{this.image}}" alt=""></label>
-                        <p>{{this.name}}</p>
-                    </div>
-                {{/each}}
-            </div>
             <div><h5 class="fridge-classification-title">Dairy & Eggs</h5></div>
+            <div class="current-ingredients-display-flex">
+                {{#each ingredients.dairyAndEggs}} 
+                    <div class="current-ingredients-display-flex">
+                        <input id="{{this.name}}" type="checkbox" class="css-checkbox" name="ingredient" value="{{this.name}}">
+                        <label for="{{this.name}}" class="css-label"><img class="current-ingredients-image" src="{{this.image}}" alt=""></label>
+                        <p class="current-ingredient-name">{{this.name}}</p>
+                    </div>
+                {{/each}}
+            </div>
         </div>
         <div>
-            <div>
+            <div><h5 class="fridge-classification-title">Fruits</h5></div>
+            <div class="current-ingredients-display-flex">
                 {{#each ingredients.fruits}} 
                     <div>
                         <input id="{{this.name}}" type="checkbox" class="css-checkbox" name="ingredient" value="{{this.name}}">
-                        <label for="{{this.name}}" class="css-label"><img src="{{this.image}}" alt=""></label>
-                        <p>{{this.name}}</p>
+                        <label for="{{this.name}}" class="css-label"><img class="current-ingredients-image" src="{{this.image}}" alt=""></label>
+                        <p class="current-ingredient-name">{{this.name}}</p>
                     </div>
                 {{/each}}
-            </div>
-            <div><h5 class="fridge-classification-title">Fruits</h5></div>
+            </div>  
         </div>
         <div>
-            <div>
+            <div><h5 class="fridge-classification-title">Cereals</h5></div>
+            <div class="current-ingredients-display-flex">
                 {{#each ingredients.cereals}} 
                     <div>
                         <input id="{{this.name}}" type="checkbox" class="css-checkbox" name="ingredient" value="{{this.name}}">
-                        <label for="{{this.name}}" class="css-label"><img src="{{this.image}}" alt=""></label>
-                        <p>{{this.name}}</p>
+                        <label for="{{this.name}}" class="css-label"><img class="current-ingredients-image" src="{{this.image}}" alt=""></label>
+                        <p class="current-ingredient-name">{{this.name}}</p>
                     </div>
                 {{/each}}
             </div>
-            <div><h5 class="fridge-classification-title">Cereals</h5></div>
         </div>
         <div>
-            <div>
+            <div><h5 class="fridge-classification-title">Sweets</h5></div>
+            <div class="current-ingredients-display-flex">
                 {{#each ingredients.sweets}} 
                     <div>
                         <input id="{{this.name}}" type="checkbox" class="css-checkbox" name="ingredient" value="{{this.name}}">
-                        <label for="{{this.name}}" class="css-label"><img src="{{this.image}}" alt=""></label>
-                        <p>{{this.name}}</p>
+                        <label for="{{this.name}}" class="css-label"><img class="current-ingredients-image" src="{{this.image}}" alt=""></label>
+                        <p class="current-ingredient-name">{{this.name}}</p>
                     </div>
                 {{/each}}
             </div>
-            <div><h5 class="fridge-classification-title">Sweets</h5></div>
         </div>
-        <input type="submit" value="Delete">
+         <div class="current-ingredients-buttons">
+            <input type="submit" class="current-ingredients-delete-button" value="Delete">
+            <p><a class="current-ingredients-add-button" href="/fridge/ingredients/add">Add</a></p>
+        </div>
     </form>
-    <h1><a href="/fridge/ingredients/add">+</a></h1>
 </div>
-
-<nav>icon delete</nav>
