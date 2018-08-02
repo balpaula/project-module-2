@@ -1,13 +1,13 @@
 {{> navlogout }}
 <section class="detail-container">
-    <img src="{{this.image}}" alt="">
+    <img src="{{this.image}}" alt="" class="recipe-picture">
     <div class="detail-container-2">
-    <h1 class="detail-title">{{this.title}}</h1>
+        <h1 class="detail-title underline-magical">{{this.title}}</h1>
     <div>
-        <h3 class="detail-h3">Difficulty: {{#each this.level}}<img src="/images/spoon-16.png" alt="" class="detail-spoon">{{/each}}</h3>
+        <h3 class="detail-h3 underline-magical">Difficulty: {{#each this.level}}<img src="/images/spoon-16.png" alt="" class="detail-spoon">{{/each}}</h3>
     </div>
     <div>
-        <h3 class="detail-h3">Time: {{this.time}} min</h3>
+        <h3 class="detail-h3 underline-magical">Time: {{this.time}} min</h3>
     </div>
     <h4 class="detail-h4">Ingredients: {{#each this.ingredients}}{{this}} {{/each}}</h4>
     <ol>
@@ -16,5 +16,9 @@
         {{/each}}
     </ol>
     <p class="detail-source">Source: <i>{{this.source}}</i></p>
+    <div class="container-button-center">
+        <div class="done-button">
+            <a href="/home"><p>Yummy!</p></a>
+        </div>
     </div>
 </section>
