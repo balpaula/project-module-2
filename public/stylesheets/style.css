@@ -64,11 +64,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .nav-logo {
   height: 4vh;
-  margin: 0 2vh; 
+  margin: 3vh 3vh; 
 }
 
 .nav-logo img {
@@ -274,13 +275,16 @@ background-color: transparent;
 .recipes-container {
   display: flex;
   flex-direction: column;
+  padding: 5%;
 }
 
 .recipes-div {
   text-align: center;
   border-bottom:2px solid #92b698;
-  background-color: #b3e0e0;
+  background-color: #f39558;
   padding: 15%;
+  margin-bottom: 5%;
+  border-radius: 5%;
 }
 
 .recipes-title{
@@ -291,17 +295,22 @@ background-color: transparent;
 .all-recipes {
   display: flex;
   flex-direction: column;
-  background-color: #8ed2d2;
+  background-color: white;
+  padding: 5%;
 }
 
 .list-recipes-div {
   text-align: center;
   margin-bottom: 2%;
-  background-color: #b3e0e0;
+  background-color: #f39558;
+  background-color: #f39558;
+  padding: 5%;
+  margin-bottom: 5%;
+  border-radius: 5%;
 }
 
 .list-recipes-title {
-  font-size: 3em;
+  font-size: 6em;
   text-decoration: none;
   list-style-type: none;
 }
@@ -313,20 +322,20 @@ background-color: transparent;
 }
 
 .list-recipes-text {
-  font-size: 2em;
+  font-size: 4em;
   color: #3b3b3b;
 }
 
 .detail-container {
   display: flex;
   flex-direction: column;
-  background-color: #8ed2d2;
+  background-color: #f39558;
 }
   
 
 .detail-title {
   font-size: 5em;
-  color: #f3836b;
+  color: #3b3b3b;
 }
 
 .detail-h3 {
@@ -361,6 +370,8 @@ color: #3b3b3b;
 .fridge-classification-title {
   font-size: 6em;
   font-weight: 400;
+  text-align: center;
+  border-bottom: 1px solid #3b3b3b;
 }
 
 input[type=checkbox].css-checkbox{ display: none; }
@@ -395,6 +406,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
   font-size: 6em;
   display: flex;
   padding-left: 25%;
+  flex-direction: row;
 }
 
 .current-ingredient-name {
@@ -414,11 +426,13 @@ font-size: 4em;
 
 .current-ingredients-delete-button {
 font-size: 6em;
-color: #2FBCDF;
-background-color: #f3836b;
+color: white;
+background-color: #3b3b3b;
 border-radius: 15px;
 height: 2em;
 width: 4em;
+margin-bottom: 5%;
+text-decoration: none;
 }
 
 .current-ingredients-buttons{
@@ -429,8 +443,8 @@ width: 4em;
 
 .current-ingredients-add-button {
 font-size: 9em;
-color: #2FBCDF;
-background-color: #f3836b;
+color: white;
+background-color: #3b3b3b;
 border-radius: 15px;
 height: 2em;
 width: 4em;
@@ -472,12 +486,13 @@ text-decoration: none;
 
 .current-ingredients-delete-button-2 {
 font-size: 6em;
-color: #2FBCDF;
-background-color: #f3836b;
+color: white;
+background-color: #3b3b3b;
 border-radius: 15px;
 height: 2em;
 width: 4em;
 margin-left: 38%;
+margin-bottom: 5%;
 }
 
 .singup-message {
@@ -513,4 +528,30 @@ margin-left: 38%;
   color: white;
   font-family: 'Abril Fatface', cursive;
   font-weight: 400;
+}
+
+.recipes-text-3 {
+  color: #3b3b3b;
+}
+
+.logout-button-2 {
+  color: white;
+  font-size: 5em;
+  text-transform: uppercase;
+  margin-top: 15%;
+  padding-top: 5%;
+  padding-right: 18%;
+}
+
+.go-home {
+  font-size:6em;
+  text-decoration: none;
+  color: white;
+}
+
+.go-home-div {
+  width: 20em;
+  height: 10em;
+  background-color: #3b3b3b;
+  border-radius: 10%;
 }
