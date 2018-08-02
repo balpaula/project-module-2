@@ -8,12 +8,12 @@ const ingredients = [
     {
         name: 'pepper',
         type: 'vegetable',
-        image: 'http://localhost:3000/images/icon/Pepper.svg'
+        image: '/images/icon/Pepper.svg'
     },
     {
         name: 'lettuce',
         type: 'vegetable',
-        image: 'http://localhost:3000/images/icon/Lettuce.svg'
+        image: '/images/icon/Lettuce.svg'
     },
     {
         name: 'bread',
@@ -23,22 +23,22 @@ const ingredients = [
     {
         name: 'cheese',
         type: 'dairy',
-        image: 'http://localhost:3000/images/icon/Cheese.svg'
+        image: '/images/icon/Cheese.svg'
     },
     {
         name: 'chicken',
         type: 'meat',
-        image: 'http://localhost:3000/images/icon/Chicken.svg'
+        image: '/images/icon/Chicken.svg'
     },
     {
         name: 'watermelon',
         type: 'fruit',
-        image: 'http://localhost:3000/images/icon/Watermelon.svg'
+        image: '/images/icon/Watermelon.svg'
     },
     {
         name: 'lemon',
         type: 'fruit',
-        image: 'http://localhost:3000/images/icon/Lemon.svg'
+        image: '/images/icon/Lemon.svg'
     },
     {
         name: 'cookies',
@@ -48,27 +48,27 @@ const ingredients = [
     {
         name: 'steak',
         type: 'meat',
-        image: 'http://localhost:3000/images/icon/Steak.svg'
+        image: '/images/icon/Steak.svg'
     },
     {
         name: 'milk',
         type: 'dairy',
-        image: 'http://localhost:3000/images/icon/Milk.svg'
+        image: '/images/icon/Milk.svg'
     },
     {
         name: 'egg',
         type: 'eggs',
-        image: 'http://localhost:3000/images/icon/Egg.svg'
+        image: '/images/icon/Egg.svg'
     },
     {
         name: 'jam',
         type: 'sweets',
-        image: 'http://localhost:3000/images/icon/Jam.svg'
+        image: '/images/icon/Jam.svg'
     },
     {
         name: 'chocolate',
         type: 'sweets',
-        image: 'http://localhost:3000/images/icon/Chocolate.svg'
+        image: '/images/icon/Chocolate.svg'
     },
     {
         name: 'sardine',
@@ -78,22 +78,22 @@ const ingredients = [
     {
         name: 'salame',
         type: 'meat',
-        image: 'http://localhost:3000/images/icon/Salame.svg'
+        image: '/images/icon/Salame.svg'
     },
     {
         name: 'eggplant',
         type: 'vegetable',
-        image: 'http://localhost:3000/images/icon/Eggplant.svg'
+        image: '/images/icon/Eggplant.svg'
     },
     {
         name: 'carrot',
         type: 'vegetable',
-        image: 'http://localhost:3000/images/icon/Carrot.svg'
+        image: '/images/icon/Carrot.svg'
     },
     {
         name: 'grapes',
         type: 'fruit',
-        image: 'http://localhost:3000/images/icon/Grapes.svg'
+        image: '/images/icon/Grapes.svg'
     },
     {
         name: 'rice',

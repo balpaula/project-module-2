@@ -11,7 +11,7 @@ const recipes = [
         time: 30,
         ingredients: ['cheese'],
         description: ['Bring a large pan of water to the boil and cook the pasta following pack instructions, adding the broccoli florets to the pan for the final 4 mins. Drain and set aside.', 'Meanwhile, make the sauce. Heat the oil in a large pan and cook the onion for 5 mins to soften, then stir in the garlic and cook for 1 min more. Stir in the ham and cream, then bring to the boil. Add the pasta and broccoli, then stir in the cheese, coating everything in the sauce.'],
-        image: 'http://localhost:3000/images/broccoli-pasta.png',
+        image: '/images/broccoli-pasta.png',
         source: 'bbcgoodfood.com'
     },
     {
@@ -20,7 +20,7 @@ const recipes = [
         time: 45,
         ingredients: ['garlic', 'mushroom', 'spinach', 'cheese', 'pasta'],
         description: ['Heat oven to 200C/180C fan/gas 6. Heat the oil in a large frying pan, add the garlic and cook for 1 min. Add the mushrooms and thyme, then cook for 3 mins until they start to soften. Throw in the spinach and stir until the heat of the pan wilts the leaves. Remove from the heat and stir in the soft cheese, 1 tbsp of the Parmesan and some seasoning.', 'Put a quarter of the spinach mix on the bottom of a medium-sized baking dish, lay 2 pasta sheets on top, then repeat until you have used all the pasta. Finish with the final quarter of the spinach mix, sprinkle over the rest of the Parmesan, then bake for 35 mins until golden and the pasta is tender'],
-        image: 'http://localhost:3000/images/mushroom-spinach-lasagna.jpg',
+        image: '/images/mushroom-spinach-lasagna.jpg',
         source: 'bbcgoodfood.com'
     },
     {
@@ -65,7 +65,7 @@ const recipes = [
         time: 20,
         ingredients: ['sausage', 'mushroom', 'tomato sauce', 'pasta', 'cheese'],
         description: ['Heat a large, wide frying pan, then crumble in the sausage meat and fennel seeds (there is no need to add any oil). Fry for a few mins until golden and the fat is released, stirring well to break up the meat. Add the mushrooms and fry for a few mins until beginning to soften. Stir in the wine now, if using, bubble for 1 min, then add the tomato sauce and heat through until bubbling.', 'Meanwhile, boil the penne. When ready, drain and tip into the sauce. Mix well until completely coated, then divide between four plates, finishing with a little Parmesan.'],
-        image: 'http://localhost:3000/images/bolognese2.jpg',
+        image: '/images/bolognese2.jpg',
         source: 'bbcgoodfood.com'
     },
     {
@@ -92,7 +92,7 @@ const recipes = [
         time: 30,
         ingredients: ['rice', 'chicken', 'onion', 'garlic', 'egg'],
         description: ['Cook the rice according to the pack instructions until al dente (10-15 minutes). Drain, rinse to cool, then tip onto kitchen paper and pat dry. Meanwhile, cut the skin and bone from the chicken (and discard), then slice the meat. Slice the onions, crush the garlic and lightly beat the eggs.', 'Heat the oil in a wok or big frying pan, then stir-fry the chicken over a high heat for 3-4 minutes until just browned. Add the onions and garlic, then reduce the heat to low-medium. Cook, stirring, for 5-6 minutes, then add the eggs. Leave for a few seconds to set a little, then stir with a spatula to break up the egg.', 'Add the rice and stir-fry over a high heat for 5 minutes or until the rice is piping hot, the chicken is cooked and everything is lightly browned. Stir in the soy sauce, vinegar and fish sauce, then check the seasoning. Divide among bowls and serve straightaway, topped with leaves picked from the coriander.'],
-        image: 'http://localhost:3000/images/rice-chicken.jpg',
+        image: '/images/rice-chicken.jpg',
         source: 'deliciousmagazine.com'
     },
 ]
