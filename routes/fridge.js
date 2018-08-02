@@ -58,7 +58,7 @@ router.get('/ingredients/add', function(req, res, next) {
   User.findById(currentUser._id)
     .then(user => {
       
-      return Ingredient.find( { "_id": { "$nin": user.fridge }})
+      return Ingredient.find( { "_id": { "$nin": user.fridge }}).sort( {name: 1} )
     })
     .then(ingredients => {
       console.log('ingredients', ingredients);
