@@ -107,11 +107,11 @@ body {
 }
 
 .info {
-  padding: 7%;
+  padding: 5% 7%;
 }
 
 .info p {
-  text-align: justify;
+  text-align: center;
 }
 
 .signup-form, .login-form {
@@ -268,6 +268,7 @@ color: #3b3b3b;
 font-size: 1em;
 padding: 10px 15px;
 text-transform: uppercase;
+background-color: transparent;
 }
 
 .recipes-container {
