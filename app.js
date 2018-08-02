@@ -9,9 +9,10 @@ const MongoStore = require('connect-mongo')(session);
 const authMiddleWare = require('./middlewares/auth');
 const hbs = require('hbs');
 const flash = require('connect-flash');
+require('dotenv').config();
 
-
-mongoose.connect('mongodb://localhost/fridgeat');
+//mongoose.connect('mongodb://localhost/fridgeat');
+mongoose.connect(process.env.MONGODB_URI);
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
