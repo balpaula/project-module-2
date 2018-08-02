@@ -236,6 +236,7 @@ body {
 .home-container {
   display: flex;
   flex-direction: column;
+  margin-top: 20%;
 }
 
 .home-fridge {
@@ -245,23 +246,22 @@ body {
 
 .home-fridge {
   font-size: 6em;
+  color: #8ed2d2;
 }
 
 .home-recipes{
   width: 100%;
   text-align: center;
+  padding-top: 5%;
+}
+
+.home-recipes-icon, .home-fridge-icon {
+  height: 75%;
 }
 
 .home-recipes h3{
  font-size: 6em;
-}
-
-.home-recipes-icon {
-  height: 25vh;
-}
-
-.home-fridge-icon {
-  height: 30vh;
+ color: #f3836b;
 }
 
 .logout-button {
@@ -277,55 +277,75 @@ body {
 
 .recipes-div {
   text-align: center;
+  border-bottom:2px solid #92b698;
+  background-color: #b3e0e0;
+  padding: 15%;
 }
 
 .recipes-title{
   text-decoration: none;
   font-size: 8em;
-  color: #3b3b3b;
 }
 
 .all-recipes {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  background-color: #8ed2d2;
 }
 
 .list-recipes-div {
   text-align: center;
+  margin-bottom: 2%;
+  background-color: #b3e0e0;
 }
 
 .list-recipes-title {
   font-size: 3em;
   text-decoration: none;
+  
+}
+
+.list-recipes-title-a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #f3836b;
 }
 
 .list-recipes-text {
   font-size: 2em;
+  color: #3b3b3b;
 }
 
 .detail-container {
   display: flex;
   flex-direction: column;
+  background-color: #8ed2d2;
 }
+  
 
 .detail-title {
   font-size: 5em;
+  color: #f3836b;
 }
 
 .detail-h3 {
  font-size: 3em;
+ color: #3b3b3b;
 }
 
 .detail-h4 {
 font-size: 2em;
+color: #3b3b3b;
 }
 
 .detail-instructions {
   font-size: 2em;
+  color: #3b3b3b;
 }
 
 .detail-source {
   font-size: 1.5em;
+  color: #3b3b3b;
 }
 
 .detail-spoon {
@@ -357,4 +377,104 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
  background-position: 0 0;
  outline: 3px solid #2FBCDF;
  -moz-outline-radius: 10px;
+}
+
+
+.recipes-text {
+  list-style-type: none;
+  text-decoration: none;
+  color: #f3836b
+}
+
+.recipe-detail-div {
+  padding: 5%;
+}
+
+.current-ingredients-title {
+  font-size: 6em;
+  display: flex;
+  padding-left: 25%;
+}
+
+.current-ingredient-name {
+font-size: 4em;
+}
+
+.current-ingredients-image {
+  height: 10vh;
+}
+
+.current-ingredients-display-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.current-ingredients-delete-button {
+font-size: 6em;
+color: #2FBCDF;
+background-color: #f3836b;
+border-radius: 15px;
+height: 2em;
+width: 4em;
+}
+
+.current-ingredients-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.current-ingredients-add-button {
+font-size: 9em;
+color: #2FBCDF;
+background-color: #f3836b;
+border-radius: 15px;
+height: 2em;
+width: 4em;
+text-decoration: none;
+}
+
+.ingredients-add-div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;  
+}
+
+.add-ingredients-image {
+  height: 13vh;
+}
+
+.add-ingredients-text {
+  font-size: 3em;
+  line-height: 0;
+}
+
+.add-ingredients-checkbox {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.add-ingredients-inner-div {
+  display: flex;
+  flex-direction: row;
+  margin: 10%;
+}
+
+.add-ingredients-space {
+  margin: 5%;
+}
+
+
+.current-ingredients-delete-button-2 {
+font-size: 6em;
+color: #2FBCDF;
+background-color: #f3836b;
+border-radius: 15px;
+height: 2em;
+width: 4em;
+margin-left: 38%;
 }

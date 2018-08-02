@@ -1,11 +1,16 @@
 {{> navlogout }}
 
 <form action="/fridge/ingredients/add" method="post">
+    <div class="ingredients-add-div">
     {{#each ingredients}}
-        <div>
-            <img src="{{this.image}}" alt=""><br>
-            <input type="checkbox" name="ingredient" value="{{this.name}}">{{this.name}}<br>
-        </div>
+        <div class="add-ingredients-space">
+            <img   class="add-ingredients-image" src="{{this.image}}" alt="">
+            <div class="add-ingredients-inner-div">
+            <input class="add-ingredients-checkbox" type="checkbox" name="ingredient" value="{{this.name}}">
+            <p class="add-ingredients-text">{{this.name}}</p>
+            </div>
+        </div>   
     {{/each}}
-    <input type="submit" value="Add">
+    </div>
+    <input   class="current-ingredients-delete-button-2" type="submit" value="Add">
 </form>
