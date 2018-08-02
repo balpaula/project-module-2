@@ -1,0 +1,360 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}  
+
+.header {
+  margin-top: 36vh;
+  text-align: center;
+}
+
+.title {
+  background-image: url('../images/backgroundImages/index-bg-img-vertical.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 94vh;
+}
+
+.main-title {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+  font-size: 22em;
+  color: white;
+  line-height: 70px;
+  margin: 0.6em 0;
+}
+
+.subtitle {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 7em;
+  color: white;
+  padding: 0 5%; 
+}
+
+.nav-index {
+  background-color: rgba(255, 255, 255,0.4);
+}
+
+.nav-only-logo {
+  background-color: #3b3b3b;
+}
+
+.nav-index, .nav-only-logo {
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.nav-logout {
+  background-color: #3b3b3b;
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  height: 4vh;
+  margin: 0 2vh; 
+}
+
+.nav-logo img {
+  height: 4vh;
+}
+
+.auth {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.auth a {
+  color: #3b3b3b;
+  text-decoration: none;
+}
+
+.auth li {
+  text-transform: uppercase;
+  padding-right: 4vw;
+  font-size: 5em;
+}
+
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.logo-text div {
+  width: 100%;
+}
+
+.info {
+  padding: 7%;
+}
+
+.info p {
+  text-align: justify;
+}
+
+.signup-form, .login-form {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 91vh;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form {
+  background-image: url('../images/backgroundImages/cherry-food-fresh-890507.jpg');
+}
+
+.item-signup, .item-login {
+  padding: 4% 0;
+}
+
+.login-form {
+  background-image: url('../images/backgroundImages/bowl-coffee-cooking-880476.jpg');
+}
+
+.signup-login-button {
+  text-transform: uppercase;
+  font-size: 4em;
+  color: white;
+  background-color: #3b3b3b;
+
+  padding: 3% 6%;
+  border-radius: 30px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.form-div {
+  background-color: rgba(255, 255, 255,0.7);
+  text-align: center;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+}
+
+.general-form {
+  text-align: center;
+}
+
+.img-text {
+  height: 20vh;
+}
+
+.section2-text {
+  font-size: 4em;
+  color: #3b3b3b;
+}
+
+.section2-titles {
+  font-size: 7em;
+}
+
+.form-title {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+  font-size: 12em;
+  color: #3b3b3b;
+}
+
+.form-text {
+  font-size: 5em;
+  display: block;
+  color: #3b3b3b;
+}
+
+.form-input {
+  width: 50%;
+  height: 2vh;
+}
+
+.align-form-cemter {
+  text-align: center;
+}
+
+.align-form-left {
+  text-align: left;
+}
+
+.input-button-space {
+  margin-top: 20%;
+}
+
+.another-acc {
+  margin-top:10%;
+}
+
+.form-acc-text {
+  font-size: 4em;
+  color: #3b3b3b;
+}
+
+.form-acc-text a {
+  text-decoration: underline;
+}
+
+.remove-style-acc {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+
+.footer {
+  background-color: #3b3b3b;
+  overflow: hidden;
+  text-align: center;
+}
+
+.footer-text {
+  margin: 0.5em;
+  font-size: 4em;
+  color: white;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-fridge {
+  width: 100%;
+  text-align: center;
+}
+
+.home-fridge {
+  font-size: 6em;
+}
+
+.home-recipes{
+  width: 100%;
+  text-align: center;
+}
+
+.home-recipes h3{
+ font-size: 6em;
+}
+
+.home-recipes-icon {
+  height: 25vh;
+}
+
+.home-fridge-icon {
+  height: 30vh;
+}
+
+.logout-button {
+  height: 5vh;
+  color: white;
+  font-size: 6em;
+}
+
+.recipes-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipes-div {
+  text-align: center;
+}
+
+.recipes-title{
+  text-decoration: none;
+  font-size: 8em;
+  color: #3b3b3b;
+}
+
+.all-recipes {
+  display: flex;
+  flex-direction: column
+}
+
+.list-recipes-div {
+  text-align: center;
+}
+
+.list-recipes-title {
+  font-size: 3em;
+  text-decoration: none;
+}
+
+.list-recipes-text {
+  font-size: 2em;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-title {
+  font-size: 5em;
+}
+
+.detail-h3 {
+ font-size: 3em;
+}
+
+.detail-h4 {
+font-size: 2em;
+}
+
+.detail-instructions {
+  font-size: 2em;
+}
+
+.detail-source {
+  font-size: 1.5em;
+}
+
+.detail-spoon {
+  height: 3vh;
+}
+
+.logout-text {
+  font-size: 3em;
+  color: white;
+}
+
+.fridge-classification-title {
+  font-size: 6em;
+  font-weight: 400;
+}
+
+input[type=checkbox].css-checkbox{ display: none; }
+
+.css-label{
+  display: flex;
+  width: 4.4vw;
+  background-color: #E9EEF4;
+  background-size: contain;
+  margin: 2%;
+  border-radius: 10px;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+ background-position: 0 0;
+ outline: 3px solid #2FBCDF;
+ -moz-outline-radius: 10px;
+}
