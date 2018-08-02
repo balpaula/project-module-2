@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
+const Recipe = require('./models/recipe');
+
 require('dotenv').config();
+mongoose.connect(process.env.MONGODB_URI);
+// mongoose.connect('mongodb://localhost/fridgeat');
 
-//mongoose.connect(process.env.MONGODB_URI);
-mongoose.connect('mongodb://localhost/fridgeat');
-
-const Recipe = require('../models/recipe');
 
 const recipes = [
     {
