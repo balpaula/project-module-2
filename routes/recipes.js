@@ -41,6 +41,25 @@ router.get('/all', function(req, res, next) {
     });
 });
 
+router.get('/day', (req, res, next) => {
+  const today = new Date();
+  const dd = today.getDate();
+
+  Recipe.find()
+    .then(recipes => {
+      const chosen = (recipes.length - 1) % dd;
+      return recipes[chosen]._id;
+    })
+    .then(id => {
+      Recipe.findById(id)
+      .then(recipe => {
+        res.render('recipedetail', recipe);
+      })
+      .catch(next);
+    })
+    .catch(next);
+});
+
 router.get('/:id', (req, res, next) => {
   const { id } = req.params;
   Recipe.findById(id)
@@ -51,7 +70,6 @@ router.get('/:id', (req, res, next) => {
       next(error);
     });
 });
-
 
 
 module.exports = router;
