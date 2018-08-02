@@ -29,7 +29,7 @@ const recipes = [
         time: 30,
         ingredients: ['pasta', 'pepper', 'salmon', 'lemon', 'garlic', 'onion'],
         description: ['Cook the pasta following pack instructions. Meanwhile, heat the rapeseed oil in a frying pan, add the pepper, cover and leave for about 5 mins until it softens and starts to char a little. Stir, then push the pepper to one side and add the salmon. Cover and fry for 8-10 mins until just cooked.', 'Meanwhile, mix the lemon zest and juice in a large bowl with the garlic, onion, capers and olives.', 'Add the cooked pepper and salmon to the bowl. Drain the pasta and add it too, with black pepper and the olive oil. Toss everything together, flaking the salmon as you do so. If eating now, toss through the rocket; if packing a lunch, leave to cool, then put in a container with the rocket on top and mix through just before eating.'],
-        image: String,
+        image: '/images/salmon-pasta.jpg',
         source: 'bbcgoodfood.com'
     },
     {
@@ -38,7 +38,7 @@ const recipes = [
         time: 10,
         ingredients: ['garlic', 'lemon', 'sardines', 'bread'],
         description: ['Heat the olive oil in a frying pan, then sizzle the garlic clove and red chilli. Add the lemon zest.', 'Add the sardines and heat through for a few mins until warm.', 'Toast the brown bread. Stir the parsley into the sardines, add a squeeze of lemon juice, then divide between the toast and serve.'],
-        image: String,
+        image: '/images/sardines-toast.jpg',
         source: 'bbcgoodfood.com'
     },
     {
@@ -47,7 +47,7 @@ const recipes = [
         time: 30,
         ingredients: ['potato', 'mushroom', 'milk', 'chicken'],
         description: ['Microwave the potatoes for 10 mins on High, turning after 5 mins, and heat oven to 220C/fan 200C/gas 7. Meanwhile, heat the oil in a frying pan, then fry the mushrooms over a high heat until golden. Stir in the cornflour, gradually add 100ml milk, then simmer to a smooth sauce. Season to taste, then stir in the chicken and parsley.', 'Scoop most of the potato from the skins, then mash with the remaining milk and some seasoning. Spoon the chicken filling into the shells, top with the mash, then bake for 10 minutes until golden and the skins have crisped a little. Serve with green veg or a salad.'],
-        image: String,
+        image: '/chicken-pie.jpg',
         source: 'bbcgoodfood.com'
     },
     {
@@ -74,7 +74,7 @@ const recipes = [
         time: 10,
         ingredients: ['egg', 'cheese', 'onion', 'tomato', 'bread'],
         description: ['Beat together eggs, crème fraîche, cheese and chives with a little seasoning. Heat oil in a pan, then soften spring onion for a few mins. Add tomatoes and warm through, then pour in egg mixture. Cook over a low heat, stirring, until eggs are just set. Pile over toast.'],
-        image: String,
+        image: '/images/egg-toast.jpg',
         source: 'bbcgoodfood.com'
     },
     {
