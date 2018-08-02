@@ -48,9 +48,9 @@ router.get('/', function(req, res, next) {
     })
     .catch(next);
 });
+
 router.get('/ingredients', function(req, res, next) {
-  res.send('ingredients');
-  //redirect to ingredients/add
+  res.redirect('ingredients/add');
 });
 
 router.get('/ingredients/add', function(req, res, next) {
@@ -71,11 +71,6 @@ router.post('/ingredients/add', (req, res, next) => {
   const newIngredients = req.body.ingredient;
   const { currentUser } = req.session;
 
-  //primero buscan los ingredientes
-  // dentro del then de la resolucion
-  //.then((data)) => {
-  // User.findByIdAndUpdate(cuenter, data)  
-  //}
   User.findById(currentUser._id)
     .then((user) => {
       Ingredient.find( { "name": { "$in": newIngredients } } )
@@ -90,12 +85,9 @@ router.post('/ingredients/add', (req, res, next) => {
             .catch(next);
         })
         .catch(next);
-
     })
-    .catch(next)
-    
-    
-  });
+    .catch(next);
+});
 
 router.post('/ingredients/delete', (req, res, next) => {
   const ingredientsToDelete = req.body.ingredient;
@@ -112,74 +104,5 @@ router.post('/ingredients/delete', (req, res, next) => {
     })
     .catch(next);
 });
-
-  // User.findById(currentUser._id)
-  // .then((user) => {
-  //   return user.fridge
-  // })
-  // .then((fridge) => {
-  //   Ingredient.find( { "name": { "$in": newIngredients } } )
-  //   .then((ingredients) => {
-  //     currentUser.fridge.push(ingredients)
-  //     // User.findById(currentUser._id, { "$push": { "fridge": { "$each": ingredients }}})
-  //     // User.update({"_id": currentUser._id },{ $push: { "fridge": { "$each": ingredients }}})
-  //     // User.update({"_id": currentUser._id },{ $pushAll: { "fridge":  ingredients }})
-  //   })
-  //   .then(() =>{
-  //     res.redirect('/fridge')
-  //   })
-  //   .catch(next);
-  // })
-  // })
-
-// router.post('/ingredients/add', function(req, res, next) {
-//   const newIngredients = req.body.ingredient;
-//   let ingredients = [];
-
-//   if (typeof newIngredients === "string"){
-//     Ingredient.findOne({name: newIngredients})
-//       .then(obj => {
-//         ingredients.push(obj);
-//       })
-//       .catch(next);
-//   } else {
-//     newIngredients.forEach(ingredient => {
-//       Ingredient.findOne({name: ingredient})
-//         .then(obj => {
-//           ingredients.push(obj);
-//         })
-//         .catch(next);
-//     })
-//   }
-
-//   const currentUser = req.session.currentUser;
-//   User.findById(currentUser._id)
-//     .then((user) => {
-//        newIngredients.forEach(ingredient => {
-//         if (!user.fridge.includes(ingredient)) {
-//       let ingredientsID = user.fridge.map(element => {
-//         let id  = element._id.toString();
-//         return id;
-//       })
-
-//       console.log(ingredientsID);
-
-//       ingredients.forEach(ingredient => {
-//         let id = ingredient._id.toString();
-//         if (!ingredientsID.includes(id)) {
-//           user.fridge.push(ingredient);
-//         }
-//       })
-//       return user.save();
-//     }})
-//     .then((user) => {
-//       res.redirect('/fridge');
-//     })
-//     .catch(next);
-// });
-
-// router.post('/ingredients/:id/delete', function(req, res, next) {
-  
-// });
 
 module.exports = router;
