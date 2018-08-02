@@ -3,7 +3,7 @@
 <section class="all-recipes">
 {{#each recipes}}
     <div class="list-recipes-div">
-        <h3 class="list-recipes-title"><a href="/recipes/{{this.id}}">{{this.title}}</a></h3>
+        <h3 class="list-recipes-title"><a class="delete-link" href="/recipes/{{this.id}}">{{this.title}}</a></h3>
         <p class="list-recipes-text">Ingredients: {{#each this.ingredients}}{{this}} {{/each}}</p>
     </div>
 {{/each}}

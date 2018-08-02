@@ -1,6 +1,7 @@
 {{> navlogout }}
 <section class="detail-container">
     <img src="{{this.image}}" alt="">
+    <div class="detail-container-2">
     <h1 class="detail-title">{{this.title}}</h1>
     <div>
         <h3 class="detail-h3">Difficulty: {{#each this.level}}<img src="/images/spoon-16.png" alt="" class="detail-spoon">{{/each}}</h3>
@@ -15,4 +16,5 @@
         {{/each}}
     </ol>
     <p class="detail-source">Source: <i>{{this.source}}</i></p>
+    </div>
 </section>

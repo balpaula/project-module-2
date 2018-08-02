@@ -25,7 +25,10 @@
 </section>
 
 {{#if currentUser}}
-    <a href="/home">Access my fridge</a>
+    <section class="to-my-fridge">
+
+    <a  class="access-fridge-text" href="/home">Access my fridge</a>
+    </section>
 {{else}}
     <section id="signup" class="signup-form">
         <div class="form-div" data-aos="flip-left">
@@ -43,7 +46,7 @@
                     <label for="" class="form-text">Password</label>
                     <input type="password" name="password" class="form-input"/>
                 </div>
-
+                    <p class="singup-message"><i>{{message}}</i></p>
                 <div class="input-button-space">
                     <button type="submit" class="signup-login-button">Sign up</button>
                 </div>
@@ -51,7 +54,6 @@
             <div class="another-acc">
                 <p class="form-acc-text">Already have an account? <a href="/auth/login" class="remove-style-acc">Log in</a></p>
             </div>
-            {{message}}
         </div>
     </section>
 {{/if}}

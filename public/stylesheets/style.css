@@ -142,7 +142,7 @@ body {
   font-size: 4em;
   color: white;
   background-color: #3b3b3b;
-
+  
   padding: 3% 6%;
   border-radius: 30px;
   font-family: 'Work Sans', sans-serif;
@@ -200,7 +200,7 @@ body {
 }
 
 .input-button-space {
-  margin-top: 20%;
+  margin-top: 7%;
 }
 
 .another-acc {
@@ -236,7 +236,7 @@ body {
 .home-container {
   display: flex;
   flex-direction: column;
-  margin-top: 20%;
+  align-items: center;
 }
 
 .home-fridge {
@@ -244,12 +244,13 @@ body {
   text-align: center;
   font-size: 6em;
   color: #8ed2d2;
+  margin-top: 35%;
 }
 
 .home-recipes{
   width: 100%;
   text-align: center;
-  padding-top: 5%;
+  margin-top: 5%;
 }
 
 .home-recipes-icon, .home-fridge-icon {
@@ -263,9 +264,10 @@ body {
 }
 
 .logout-button {
-  height: 5vh;
-  color: white;
-  font-size: 6em;
+color: #3b3b3b;
+font-size: 1em;
+padding: 10px 15px;
+text-transform: uppercase;
 }
 
 .recipes-container {
@@ -300,7 +302,7 @@ body {
 .list-recipes-title {
   font-size: 3em;
   text-decoration: none;
-  
+  list-style-type: none;
 }
 
 .list-recipes-title-a {
@@ -475,4 +477,39 @@ border-radius: 15px;
 height: 2em;
 width: 4em;
 margin-left: 38%;
+}
+
+.singup-message {
+  font-size: 4em;
+}
+
+.login-message {
+  font-size: 4em;
+}
+
+.delete-link {
+  list-style-type: none;
+  text-decoration: none;
+  color: #3b3b3b;
+}
+
+.detail-container-2 {
+  padding: 5%;
+}
+
+.to-my-fridge {
+  background-image: url('/images/access-my-fridge.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 28vh;
+  text-align: center;
+  padding-top: 18%;
+}
+
+.access-fridge-text {
+  font-size: 10em;
+  text-decoration: none;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
 }
