@@ -242,9 +242,6 @@ body {
 .home-fridge {
   width: 100%;
   text-align: center;
-}
-
-.home-fridge {
   font-size: 6em;
   color: #8ed2d2;
 }
@@ -256,7 +253,8 @@ body {
 }
 
 .home-recipes-icon, .home-fridge-icon {
-  height: 75%;
+  width: 90%;
+  border-radius: 7vw;
 }
 
 .home-recipes h3{
