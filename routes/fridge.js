@@ -98,15 +98,19 @@ router.post('/ingredients/add', (req, res, next) => {
   });
 
 router.post('/ingredients/delete', (req, res, next) => {
-  const ingredientsToDelete = req.body;
+  const ingredientsToDelete = req.body.ingredient;
   const { currentUser } = req.session;
+  console.log(ingredientsToDelete);
 
-  User.findByIdAndUpdate(currentUser._id, {$pull: {fridge: {name: {$each: ingredientsToDelete}}}})
-  .then(user => {
-    console.log(user);
-    res.redirect('/fridge');
-  })
-  .catch(next);
+  Ingredient.find( { "name": { "$in": ingredientsToDelete } }, { _id: 1} )
+    .then(objects => {
+      User.findByIdAndUpdate(currentUser._id, {"$pull": {"fridge": {"$in": objects}}})
+        .then(user => {
+          res.redirect('/fridge');
+        })
+        .catch(next);
+    })
+    .catch(next);
 });
 
   // User.findById(currentUser._id)
