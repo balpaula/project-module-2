@@ -54,7 +54,7 @@ router.post('/login', (req, res, next) => {
     .then(user => {
       if (!user) {
         req.flash('alert', 'Incorrect username or password');
-        res.redirect('/auth/login');
+        return res.redirect('/auth/login');
       } 
       if (bcrypt.compareSync(password /* provided paswword */, user.password/* hashed password */)) {
         // Save the login in the session!
