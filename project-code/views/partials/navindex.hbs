@@ -1,5 +1,7 @@
 <nav class="nav-index">
-    <img src="http://localhost:3000/images/logo/logo-darkgrey.png" alt="Logo">
+    <div class="nav-logo">
+        <img src="http://localhost:3000/images/logo/logo-darkgrey.png" alt="Logo">
+    </div>
     <ul class="auth"> 
         {{#if currentUser}}
         <li><form action="../logout" method="POST"><input type="submit" value="logout"/></form></li>

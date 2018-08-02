@@ -48,6 +48,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center; 
 }
 
 .nav-only-logo {
@@ -66,8 +67,9 @@ body {
   justify-content: space-between;
 }
 
-.nav-index ul {
-  padding-top: 5%;
+.nav-logo {
+  height: 4vh;
+  margin: 0 2vh; 
 }
 
 .auth {
@@ -122,6 +124,10 @@ body {
 
 .signup-form {
   background-image: url('../images/backgroundImages/cherry-food-fresh-890507.jpg');
+}
+
+.item-signup, .item-login {
+  padding: 4% 0;
 }
 
 .login-form {
