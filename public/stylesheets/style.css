@@ -254,17 +254,13 @@ body {
   padding-top: 5%;
 }
 
+.home-recipes-icon, .home-fridge-icon {
+  height: 75%;
+}
+
 .home-recipes h3{
  font-size: 6em;
  color: #f3836b;
-}
-
-.home-recipes-icon {
-  height: 25vh;
-}
-
-.home-fridge-icon {
-  height: 30vh;
 }
 
 .logout-button {
