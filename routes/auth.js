@@ -63,7 +63,8 @@ router.post('/login', (req, res, next) => {
       } else {
         res.redirect('/auth/login');
       }
-    });
+    })
+    .catch(next);
 });
 
 module.exports = router;
