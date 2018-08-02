@@ -72,6 +72,10 @@ body {
   margin: 0 2vh; 
 }
 
+.nav-logo img {
+  height: 4vh;
+}
+
 .auth {
   display: flex;
   flex-direction: row;
