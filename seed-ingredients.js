@@ -20,7 +20,7 @@ const ingredients = [
     {
         name: 'bread',
         type: 'cereals',
-        image: 'asd'
+        image: '/images/icon/Sandwich.svg'
     },
     {
         name: 'cheese',
@@ -33,7 +33,7 @@ const ingredients = [
         image: '/images/icon/Chicken.svg'
     },
     {
-        name: 'watermelon',
+        name: 'wmelon',
         type: 'fruit',
         image: '/images/icon/Watermelon.svg'
     },
@@ -41,11 +41,6 @@ const ingredients = [
         name: 'lemon',
         type: 'fruit',
         image: '/images/icon/Lemon.svg'
-    },
-    {
-        name: 'cookies',
-        type: 'sweets',
-        image: 'asd'
     },
     {
         name: 'steak',
@@ -68,14 +63,14 @@ const ingredients = [
         image: '/images/icon/Jam.svg'
     },
     {
-        name: 'chocolate',
+        name: 'choco',
         type: 'sweets',
         image: '/images/icon/Chocolate.svg'
     },
     {
         name: 'sardine',
         type: 'fish',
-        image: 'asd'
+        image: '/images/icon/Fish.svg'
     },
     {
         name: 'salame',
@@ -96,11 +91,6 @@ const ingredients = [
         name: 'grapes',
         type: 'fruit',
         image: '/images/icon/Grapes.svg'
-    },
-    {
-        name: 'rice',
-        type: 'cereals',
-        image: 'asd'
     },
 ]
 
