@@ -64,6 +64,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -270,6 +271,7 @@ font-size: 1em;
 padding: 10px 15px;
 text-transform: uppercase;
 background-color: transparent;
+border-color: transparent;
 }
 
 .recipes-container {
@@ -532,15 +534,16 @@ margin-bottom: 5%;
 
 .recipes-text-3 {
   color: #3b3b3b;
+  font-size: 4.4rem;
 }
 
-.logout-button-2 {
+.logout-button-white {
   color: white;
+  background-color: transparent;
   font-size: 5em;
   text-transform: uppercase;
-  margin-top: 15%;
-  padding-top: 5%;
-  padding-right: 18%;
+  padding: 3% 5%;
+  border-color: transparent;
 }
 
 .go-home {
@@ -550,8 +553,12 @@ margin-bottom: 5%;
 }
 
 .go-home-div {
-  width: 20em;
+  width: 22em;
   height: 10em;
   background-color: #3b3b3b;
-  border-radius: 10%;
+  border-radius: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-left: 5%;
 }
