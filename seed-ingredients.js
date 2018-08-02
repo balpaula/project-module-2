@@ -33,7 +33,7 @@ const ingredients = [
         image: '/images/icon/Chicken.svg'
     },
     {
-        name: 'watermelon',
+        name: 'wmelon',
         type: 'fruit',
         image: '/images/icon/Watermelon.svg'
     },
@@ -63,7 +63,7 @@ const ingredients = [
         image: '/images/icon/Jam.svg'
     },
     {
-        name: 'chocolate',
+        name: 'choco',
         type: 'sweets',
         image: '/images/icon/Chocolate.svg'
     },

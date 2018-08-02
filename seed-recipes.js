@@ -65,7 +65,7 @@ const recipes = [
         title: 'Watermelon granita',
         level: [1],
         time: 60,
-        ingredients: ['watermelon', 'lemon'],
+        ingredients: ['wmelon', 'lemon'],
         description: ['Add your cubed watermelon, sugar, and lime juice to your blender. Blend until smooth. Pour it all into a 9×13 metal pan and freeze for one hour. Using a fork, scrape to loosen the granita. Freeze for another hour and repeat. After it has been frozen for three hours, scrape it once more and then serve in a hollowed watermelon or in cups.'],
         image: '/images/watermelon-granita.jpg',
         source: 'momadvice.com'
