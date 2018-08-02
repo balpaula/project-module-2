@@ -406,6 +406,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
   font-size: 6em;
   display: flex;
   padding-left: 25%;
+  flex-direction: row;
 }
 
 .current-ingredient-name {
@@ -431,6 +432,7 @@ border-radius: 15px;
 height: 2em;
 width: 4em;
 margin-bottom: 5%;
+text-decoration: none;
 }
 
 .current-ingredients-buttons{
@@ -539,4 +541,17 @@ margin-bottom: 5%;
   margin-top: 15%;
   padding-top: 5%;
   padding-right: 18%;
+}
+
+.go-home {
+  font-size:6em;
+  text-decoration: none;
+  color: white;
+}
+
+.go-home-div {
+  width: 20em;
+  height: 10em;
+  background-color: #3b3b3b;
+  border-radius: 10%;
 }
