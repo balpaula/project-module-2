@@ -413,7 +413,6 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 .current-ingredients-title {
   font-size: 6em;
   display: flex;
-  padding-left: 21%;
   flex-direction: row;
 }
 
@@ -443,14 +442,13 @@ font-size: 3.2em;
 }
 
 .current-ingredients-delete-button {
-font-size: 6em;
-color: white;
-background-color: #3b3b3b;
-border-radius: 15px;
-height: 2em;
-width: 4em;
-margin-bottom: 5%;
-text-decoration: none;
+  font-size: 6em;
+  border-radius: 15px;
+  height: 2em;
+  width: 6em;
+  margin-bottom: 5%;
+  color: #3b3b3b;
+  font-style: italic;
 }
 
 .current-ingredients-buttons{
@@ -474,6 +472,13 @@ text-decoration: none;
   bottom: 27px;
   left: 50%;
   margin-left: -63px;
+}
+
+.current-ingredients-h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+  color: #3b3b3b;
+  margin: 5% auto;
 }
 
 .ingredients-add-div {
@@ -510,14 +515,16 @@ text-decoration: none;
 
 
 .current-ingredients-delete-button-2 {
-font-size: 6em;
-color: white;
-background-color: #3b3b3b;
-border-radius: 15px;
-height: 2em;
-width: 4em;
-margin-left: 38%;
-margin-bottom: 5%;
+  font-size: 6em;
+  color: white;
+  background-color: #3b3b3b;
+  border-radius: 15px;
+  height: 2em;
+  width: 4em;
+  margin: 0 auto 5%;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .singup-message {
@@ -576,13 +583,10 @@ margin-bottom: 5%;
 }
 
 .go-home-div {
-  width: 22em;
   height: 10em;
-  background-color: #3b3b3b;
   border-radius: 20px;
   display: flex;
   align-content: center;
-  justify-content: center;
   margin-left: 5%;
 }
 
