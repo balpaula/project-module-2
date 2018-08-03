@@ -38,7 +38,7 @@ const recipes = [
         title: 'Sardines on toast',
         level: [1],
         time: 10,
-        ingredients: ['lemon', 'sardines', 'bread'],
+        ingredients: ['lemon', 'sardine', 'bread'],
         description: ['Heat the olive oil in a frying pan, then sizzle the garlic clove and red chilli. Add the lemon zest.', 'Add the sardines and heat through for a few mins until warm.', 'Toast the brown bread. Stir the parsley into the sardines, add a squeeze of lemon juice, then divide between the toast and serve.'],
         image: '/images/sardines-toast.jpg',
         source: 'bbcgoodfood.com'

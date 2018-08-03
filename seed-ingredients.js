@@ -8,89 +8,89 @@ mongoose.connect(process.env.MONGODB_URI);
 
 const ingredients = [
     {
-        name: 'pepper',
-        type: 'vegetable',
-        image: '/images/icon/Pepper.svg'
+        "name": "pepper",
+        "type": "vegetable",
+        "image": "/images/icon/Pepper.svg"
     },
     {
-        name: 'lettuce',
-        type: 'vegetable',
-        image: '/images/icon/Lettuce.svg'
+        "name": "lettuce",
+        "type": "vegetable",
+        "image": "/images/icon/Lettuce.svg"
     },
     {
-        name: 'bread',
-        type: 'cereals',
-        image: '/images/icon/Sandwich.svg'
+        "name": "bread",
+        "type": "cereals",
+        "image": "/images/icon/Sandwich.svg"
     },
     {
-        name: 'cheese',
-        type: 'dairy',
-        image: '/images/icon/Cheese.svg'
+        "name": "cheese",
+        "type": "dairy",
+        "image": "/images/icon/Cheese.svg"
     },
     {
-        name: 'chicken',
-        type: 'meat',
-        image: '/images/icon/Chicken.svg'
+        "name": "chicken",
+        "type": "meat",
+        "image": "/images/icon/Chicken.svg"
     },
     {
-        name: 'wmelon',
-        type: 'fruit',
-        image: '/images/icon/Watermelon.svg'
+        "name": "wmelon",
+        "type": "fruit",
+        "image": "/images/icon/Watermelon.svg"
     },
     {
-        name: 'lemon',
-        type: 'fruit',
-        image: '/images/icon/Lemon.svg'
+        "name": "lemon",
+        "type": "fruit",
+        "image": "/images/icon/Lemon.svg"
     },
     {
-        name: 'steak',
-        type: 'meat',
-        image: '/images/icon/Steak.svg'
+        "name": "steak",
+        "type": "meat",
+        "image": "/images/icon/Steak.svg"
     },
     {
-        name: 'milk',
-        type: 'dairy',
-        image: '/images/icon/Milk.svg'
+        "name": "milk",
+        "type": "dairy",
+        "image": "/images/icon/Milk.svg"
     },
     {
-        name: 'egg',
-        type: 'eggs',
-        image: '/images/icon/Egg.svg'
+        "name": "egg",
+        "type": "eggs",
+        "image": "/images/icon/Egg.svg"
     },
     {
-        name: 'jam',
-        type: 'sweets',
-        image: '/images/icon/Jam.svg'
+        "name": "jam",
+        "type": "sweets",
+        "image": "/images/icon/Jam.svg"
     },
     {
-        name: 'choco',
-        type: 'sweets',
-        image: '/images/icon/Chocolate.svg'
+        "name": "choco",
+        "type": "sweets",
+        "image": "/images/icon/Chocolate.svg"
     },
     {
-        name: 'sardine',
-        type: 'fish',
-        image: '/images/icon/Fish.svg'
+        "name": "sardine",
+        "type": "fish",
+        "image": "/images/icon/Fish.svg"
     },
     {
-        name: 'salame',
-        type: 'meat',
-        image: '/images/icon/Salame.svg'
+        "name": "salame",
+        "type": "meat",
+        "image": "/images/icon/Salame.svg"
     },
     {
-        name: 'eggplant',
-        type: 'vegetable',
-        image: '/images/icon/Eggplant.svg'
+        "name": "eggplant",
+        "type": "vegetable",
+        "image": "/images/icon/Eggplant.svg"
     },
     {
-        name: 'carrot',
-        type: 'vegetable',
-        image: '/images/icon/Carrot.svg'
+        "name": "carrot",
+        "type": "vegetable",
+        "image": "/images/icon/Carrot.svg"
     },
     {
-        name: 'grapes',
-        type: 'fruit',
-        image: '/images/icon/Grapes.svg'
+        "name": "grapes",
+        "type": "fruit",
+        "image": "/images/icon/Grapes.svg"
     },
 ]
 

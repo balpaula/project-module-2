@@ -61,6 +61,7 @@ router.post('/login', (req, res, next) => {
         req.session.currentUser = user;
         res.redirect('/home');
       } else {
+        req.flash('alert', 'Incorrect username or password');
         res.redirect('/auth/login');
       }
     })
