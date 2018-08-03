@@ -72,7 +72,7 @@ app.use(function(req, res, next) {
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
-  res.locals.message = err.status === 404 ? 'Page not found' : 'Internal server error';
+  res.locals.message = err.status === 404 ? 'Sorry, page not found' : 'Internal server error';
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
   // render the error page

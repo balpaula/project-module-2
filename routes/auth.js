@@ -6,7 +6,7 @@ const saltRounds = 10;
 const User = require('../models/user');
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res, next) => {
   res.send('auth');
   //redirect to auth/login
 });
