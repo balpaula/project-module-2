@@ -10,7 +10,7 @@
     <form action="/fridge/ingredients/delete" method="POST">
         <div>
             <div><h5 class="fridge-classification-title">Vegetables</h5></div>
-            <div class="current-ingredients-display-flex">
+            <div class="current-ingredients-display-flex-container">
                 {{#each ingredients.vegetables}} 
                     <div class="current-ingredients-display-flex">
                         <input id="{{this.name}}" type="checkbox" class="css-checkbox" name="ingredient" value="{{this.name}}">
@@ -22,7 +22,7 @@
         </div>
         <div>
         <div><h5 class="fridge-classification-title">Meat & Fish</h5></div>
-            <div class="current-ingredients-display-flex">
+            <div class="current-ingredients-display-flex-container">
                 {{#each ingredients.meatAndFish}} 
                     <div class="current-ingredients-display-flex">
                         <input id="{{this.name}}" type="checkbox" class="css-checkbox" name="ingredient" value="{{this.name}}">
@@ -34,7 +34,7 @@
         </div>
         <div>
             <div><h5 class="fridge-classification-title">Dairy & Eggs</h5></div>
-            <div class="current-ingredients-display-flex">
+            <div class="current-ingredients-display-flex-container">
                 {{#each ingredients.dairyAndEggs}} 
                     <div class="current-ingredients-display-flex">
                         <input id="{{this.name}}" type="checkbox" class="css-checkbox" name="ingredient" value="{{this.name}}">
@@ -46,7 +46,7 @@
         </div>
         <div>
             <div><h5 class="fridge-classification-title">Fruits</h5></div>
-            <div class="current-ingredients-display-flex">
+            <div class="current-ingredients-display-flex-container">
                 {{#each ingredients.fruits}} 
                     <div>
                         <input id="{{this.name}}" type="checkbox" class="css-checkbox" name="ingredient" value="{{this.name}}">
@@ -58,7 +58,7 @@
         </div>
         <div>
             <div><h5 class="fridge-classification-title">Cereals</h5></div>
-            <div class="current-ingredients-display-flex">
+            <div class="current-ingredients-display-flex-container">
                 {{#each ingredients.cereals}} 
                     <div>
                         <input id="{{this.name}}" type="checkbox" class="css-checkbox" name="ingredient" value="{{this.name}}">
@@ -70,7 +70,7 @@
         </div>
         <div>
             <div><h5 class="fridge-classification-title">Sweets</h5></div>
-            <div class="current-ingredients-display-flex">
+            <div class="current-ingredients-display-flex-container">
                 {{#each ingredients.sweets}} 
                     <div>
                         <input id="{{this.name}}" type="checkbox" class="css-checkbox" name="ingredient" value="{{this.name}}">
