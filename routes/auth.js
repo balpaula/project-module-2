@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
   //redirect to auth/login
 });
 
-router.post('/signup', function(req, res, next) {
+router.post('/signup', (req, res, next) => {
   const { username, email, password } = req.body;
   if (!username || !password) {
     req.flash('alert', 'Missing username or password');
@@ -39,7 +39,7 @@ router.post('/signup', function(req, res, next) {
     });
 });
 
-router.get('/login', function(req, res, next) {
+router.get('/login', (req, res, next) => {
   res.render('login', { message: req.flash('alert') });
 });
 
