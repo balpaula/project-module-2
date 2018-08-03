@@ -413,12 +413,12 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 .current-ingredients-title {
   font-size: 6em;
   display: flex;
-  padding-left: 25%;
+  padding-left: 21%;
   flex-direction: row;
 }
 
 .current-ingredient-name {
-font-size: 4em;
+font-size: 3.2em;
 }
 
 .current-ingredients-image {
@@ -427,13 +427,19 @@ font-size: 4em;
 
 .current-ingredients-display-flex, .current-ingredients-display-flex-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
+.current-ingredients-display-flex {
+  width: 25%;
+}
+
 .current-ingredients-display-flex-container {
   padding: 0 5vw;
+  display: flex;
+  flex-direction: row;
 }
 
 .current-ingredients-delete-button {
