@@ -641,3 +641,42 @@ margin-bottom: 5%;
   background-color: rgba(59, 59, 59, 0.2);
   padding: 5%;
 }
+
+#delete-navbar {
+  background-color: #3b3b3b;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#delete-navbar p {
+  font-size: 3rem;
+  color: white;
+}
+
+#items-selected-delete {
+  margin: 0;
+  line-height: 5vh;
+  margin-left: 1vh;
+}
+
+#delete-button-div {
+  background-image: url('/images/waste-bin.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 1% 0;
+}
+
+#delete-button {
+  height: fit-content;
+  padding: 2%;
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.hidden-text {
+  visibility: hidden;
+}

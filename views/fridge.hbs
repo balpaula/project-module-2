@@ -81,8 +81,14 @@
             </div>
         </div>
          <div class="current-ingredients-buttons">
-            <input type="submit" class="current-ingredients-delete-button" value="Delete">
             <p><a class="current-ingredients-add-button" href="/fridge/ingredients/add">Add</a></p>
         </div>
+        <nav id="delete-navbar">
+            <p id="items-selected-delete"></p>
+            <div id="delete-button-div" class="hidden-text">
+                <input type="submit" id="delete-button" value="Delete">
+            </div>
+        </nav>
     </form>
+    <script src='/javascripts/navdelete.js'></script>
 </div>
