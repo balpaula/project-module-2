@@ -1,12 +1,12 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 const User = require('../models/user');
 const Ingredient = require('../models/ingredient');
 const mongoose = require('mongoose');
 const ObjectId = mongoose.Schema.Types.ObjectId;
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res, next) => {
   const { currentUser } = req.session;
   User.findById(currentUser._id)
     .populate('fridge')
@@ -49,11 +49,11 @@ router.get('/', function(req, res, next) {
     .catch(next);
 });
 
-router.get('/ingredients', function(req, res, next) {
+router.get('/ingredients', (req, res, next) => {
   res.redirect('ingredients/add');
 });
 
-router.get('/ingredients/add', function(req, res, next) {
+router.get('/ingredients/add', (req, res, next) => {
   const { currentUser } = req.session;
   User.findById(currentUser._id)
     .then(user => {

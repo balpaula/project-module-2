@@ -1,14 +1,14 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 const User = require('../models/user');
 const Recipe = require('../models/recipe');
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res, next) => {
   res.render('recipes');
 });
 
-router.get('/suggestions', function(req, res, next) {
+router.get('/suggestions', (req, res, next) => {
   const { currentUser } = req.session;
   User.findById(currentUser._id)
     .populate('fridge')
@@ -31,7 +31,7 @@ router.get('/suggestions', function(req, res, next) {
     .catch(next);
 });
 
-router.get('/all', function(req, res, next) {
+router.get('/all', (req, res, next) => {
   Recipe.find()
     .then(recipes => {
       res.render('listrecipes', { recipes });
