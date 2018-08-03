@@ -659,7 +659,9 @@ font-size: 3.2em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 #delete-navbar p {
@@ -719,4 +721,8 @@ font-size: 3.2em;
   font-weight: 400;
   font-style: italic;
   color: #3b3b3b;
+}
+
+.last-shelf-fridge {
+  margin-bottom: 12vh;
 }
