@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/user');
 const Recipe = require('../models/recipe');
+const checkId = require('../middlewares/utils');
+const createError = require('http-errors');
 
 /* GET users listing. */
 router.get('/', (req, res, next) => {
@@ -60,11 +62,15 @@ router.get('/day', (req, res, next) => {
     .catch(next);
 });
 
-router.get('/:id', (req, res, next) => {
+router.get('/:id', checkId, (req, res, next) => {
   const { id } = req.params;
   Recipe.findById(id)
     .then(recipe => {
-      res.render('recipedetail', recipe);
+      if (recipe) {
+        res.render('recipedetail', recipe);
+      } else {
+        next(createError(404));
+      }
     })
     .catch(error => {
       next(error);
